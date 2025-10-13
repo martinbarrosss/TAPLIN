@@ -1,6 +1,1 @@
-/venv
-notes.md
-__pycache__/
-*.pyc
-
-token
+*_env
