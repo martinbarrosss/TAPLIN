@@ -1,5 +1,8 @@
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
+from langchain_community.vectorstores import Chroma
+from langchain_ollama import OllamaLLM
+
 
 class RAGChatbot:
     """
@@ -31,15 +34,15 @@ class RAGChatbot:
         """
         # Template personalizado para el prompt
         prompt_template = """Eres un asistente experto en electrodomésticos.
-Responde la pregunta basándote ÚNICAMENTE en el siguiente contenido de manuales.
-Si la información no está disponible en los manuales, indícalo claramente.
+        Responde la pregunta basándote ÚNICAMENTE en el siguiente contenido de manuales.
+        Si la información no está disponible en los manuales, indícalo claramente.
 
-Contexto de los manuales:
-{context}
+        Contexto de los manuales:
+        {context}
 
-Pregunta: {question}
+        Pregunta: {question}
 
-Respuesta:"""
+        Respuesta:"""
         
         prompt = PromptTemplate(
             template=prompt_template,
@@ -56,7 +59,7 @@ Respuesta:"""
         
         return qa_chain
     
-    def answer_question(self, question: str) -> Dict[str, str]:
+    def answer_question(self, question: str):
         """
         Procesa una pregunta y retorna la respuesta basada en RAG.
         
