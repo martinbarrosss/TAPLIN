@@ -1,0 +1,30 @@
+Una vez definidas las soluciones (Ollama Cloud y Streamlit), el trabajo se centró en la creación 
+y el diseño de los módulos clave para separar las responsabilidades.
+
+------------------------------------------------
+1. Implementación y Modularización Inicial
+
+Procesamiento de Datos Independiente: 
+El procesamiento de PDFs se encapsuló en el módulo ingest_data.py, 
+estableciendo que este script se ejecute de manera independiente antes de iniciar la aplicación. 
+Esto asegura que, en el momento de la ejecución, solo haya que realizar la carga de la base de datos vectorial 
+pre-calculada, no el cálculo en sí.
+
+Gestor Centralizado de Modelos: 
+Se creó la clase OllamaModelManager (ollama_manager.py) para manejar la carga y configuración 
+de los distintos modelos de forma centralizada. Esto permite cambiar entre distintos modelos Cloud 
+simplemente modificando las variables de entorno, sin alterar la lógica del chatbot.
+
+Lógica del Bot Encapsulada: 
+Se creó la clase RAGChatbot (chatbot.py), la cual encapsula la lógica de la cadena RAG 
+(retriever, prompt y LLM). El objetivo es que esta lógica sea independiente del modelo usado; el Chatbot 
+solo sabe que recibe un LLM y una BD, sin importar cómo se crearon.
+
+------------------------------------------------
+2. Dificultades / Obstáculos
+
+--> Obstáculo de Embedding (Ingesta): 
+Se produjo el error 401 Unauthorized al ejecutar ingest_data.py, debido a que el sistema intentaba 
+descargar el modelo de embeddings de Hugging Face con un token inválido. 
+Solución: Se tuvo que cerrar la sesión de Hugging Face (huggingface-cli logout) para permitir 
+que la descarga del modelo público se realizara correctamente.

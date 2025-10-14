@@ -20,7 +20,7 @@ def setup_sidebar(selected_model: str, temperature: float):
     with st.sidebar:
         st.title("⚙️ Configuración")
         
-        model_manager = OllamaModelManager()
+        model_manager = OllamaModelManager() #instancia del gestor de modelos
         available_models = model_manager.get_available_models()
         
         selected_model = st.selectbox(

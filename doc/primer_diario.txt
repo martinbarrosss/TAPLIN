@@ -1,0 +1,42 @@
+El enfoque inicial fue construir un prototipo mínimo viable (MVP) basado en el rendimiento 
+local para probar la viabilidad del concepto RAG por consola.
+
+------------------------------------------------
+1. Modelo Inicial y Configuración
+Modelo Utilizado: Mistral (7B) descargado y ejecutado completamente en el servidor Ollama local.
+
+Diseño de la Ingesta: 
+Se integró la lógica de procesamiento de PDFs (pdf_processor.py) directamente en el proceso 
+de inicialización de la aplicación principal (main.py).
+
+------------------------------------------------
+2. Dificultades / Inviabilidad del Prototipo
+Este enfoque reveló fallos críticos de rendimiento que hicieron la solución inviable para el usuario final:
+
+Lanzamiento del Modelo (Tiempos de Espera): 
+El tiempo de carga inicial del modelo Mistral en la memoria del ordenador fue extremadamente alto, 
+tardando aproximadamente 20 minutos en arrancar el chat.
+
+Ingesta Síncrona Lenta: 
+Al preprocesar los PDFs y generar los embeddings en el momento de lanzar la aplicación, 
+se añadió una carga de trabajo innecesaria al inicio, lo cual debe hacerse solo una vez.
+
+Latencia Inaceptable: 
+El tiempo de respuesta entre la pregunta y la respuesta del chatbot, ejecutado completamente 
+en el hardware local, tenía pausas de 2 a 5 minutos, impidiendo una conversación fluida.
+
+------------------------------------------------
+3. Soluciones y Nueva Arquitectura
+Los problemas de rendimiento obligaron a un cambio total de arquitectura, 
+separando el cómputo pesado de la experiencia del usuario:
+
+--> Decisión #1: Ollama Cloud (Computación Remota): 
+Se optó por una arquitectura centrada en el uso de modelos Cloud de OLLAMA para relegar 
+el trabajo de cómputo de inferencia (la parte más lenta) a servidores remotos. 
+Esta decisión también ayuda a que sea más fácil la ejecución y prueba de distintos 
+modelos sin depender de las especificaciones de la máquina local.
+
+--> Decisión #2: Streamlit para la Interfaz: 
+Para la interfaz de usuario, se escogió la librería Streamlit, debido a su rapidez 
+en el desarrollo, su capacidad para gestionar el estado de sesión de forma nativa, 
+y su diseño centrado en la interacción en tiempo real (chat).
