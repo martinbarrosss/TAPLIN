@@ -6,10 +6,9 @@ from typing import List, Dict
 import pymupdf
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.documents import Document
 
-# --- Clases de tu proyecto (copiadas aquí para que el script sea autónomo) ---
 
 class PDFProcessor:
     """Clase para procesar archivos PDF y preparar los datos para RAG."""
@@ -91,6 +90,6 @@ def ingest_data(pdf_dir: Path):
     
 if __name__ == "__main__":
 
-    pdf_dir = Path("../../manuals")
-    persist_dir = Path("../chroma_db")
+    pdf_dir = Path("./manuals")
+    persist_dir = Path("./chroma_db")
     ingest_data(pdf_dir)
