@@ -2,7 +2,7 @@ import streamlit as st
 from dotenv import load_dotenv
 
 # --- Importaciones de tu proyecto (lógica de negocio) ---
-from src.rag.chatbot import RAGChatbot
+from src.models.chatbot import RAGChatbot
 from src.models.ollama_manager import OllamaModelManager
 # --- Importación de utilidades (funciones auxiliares) ---
 from src.utils.app_utils import load_vector_store
