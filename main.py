@@ -19,7 +19,7 @@ def main():
         layout="wide"
     )
     
-    st.title("🤖 Asistente de Manuales de Electrodomésticos")
+    st.title(" Asistente de Manuales de Electrodomésticos")
     st.markdown(
         "Haz preguntas específicas sobre los manuales y recibe respuestas "
         "precisas basadas en el contenido real."
@@ -32,16 +32,16 @@ def main():
     col1, col2 = st.columns([2, 1])
     
     with col1:
-        st.subheader("💬 Chat")
+        st.subheader("Chat")
         
         if st.session_state.chatbot is None:
-            with st.spinner("🔄 Inicializando sistema RAG..."):
+            with st.spinner(" Inicializando sistema RAG..."):
                 try:
                     vector_store, persist_dir = load_vector_store()
                     
                     if vector_store is None:
                         st.error(
-                            f"❌ Base de datos vectorial no encontrada en '{persist_dir}'. "
+                            f" Base de datos vectorial no encontrada en '{persist_dir}'. "
                             "Por favor, ejecuta el script 'ingest_data.py' primero."
                         )
                     else:
@@ -50,7 +50,7 @@ def main():
                         model_manager = OllamaModelManager()
                         llm = model_manager.create_llm(selected_model, temperature=temperature)
                         st.session_state.chatbot = RAGChatbot(vector_store, llm)
-                        st.success("✓ Sistema RAG inicializado correctamente")
+                        st.success(" Sistema RAG inicializado correctamente")
                 
                 except Exception as e:
                     st.error(f"Error al inicializar: {str(e)}")
@@ -64,16 +64,16 @@ def main():
             st.session_state.chat_history.append({"role": "user", "content": user_question})
             st.chat_message("user").write(user_question)
             
-            with st.spinner("🔍 Buscando información..."):
+            with st.spinner(" Buscando información..."):
                 try:
                     response = st.session_state.chatbot.answer_question(user_question)
                     
                     st.chat_message("assistant").write(response["answer"])
                     
                     if response["sources"]:
-                        with st.expander("📚 Fuentes consultadas"):
+                        with st.expander(" Fuentes consultadas"):
                             for source in set(response["sources"]):
-                                st.caption(f"📄 {source}")
+                                st.caption(f" {source}")
                     
                     st.session_state.chat_history.append({"role": "assistant", "content": response["answer"]})
                     
@@ -81,7 +81,7 @@ def main():
                     st.error(f"Error al procesar: {str(e)}")
     
     with col2:
-        st.subheader("📊 Información")
+        st.subheader(" Información")
         
         st.metric("Modelo activo", st.session_state.selected_model)
         st.metric("Temperatura", f"{temperature:.1f}")
@@ -89,7 +89,7 @@ def main():
         if st.session_state.chat_history:
             st.metric("Mensajes en sesión", len(st.session_state.chat_history))
         
-        if st.button("🗑️ Limpiar historial"):
+        if st.button(" Limpiar historial"):
             st.session_state.chat_history = []
             st.rerun()
         

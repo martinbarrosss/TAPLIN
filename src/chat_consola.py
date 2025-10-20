@@ -37,14 +37,14 @@ def chat_loop(chatbot: RAGChatbot):
     """
     Bucle principal de interacción con el chatbot.
     """
-    print("🚀 ¡DoBot listo! Escribe 'salir' para terminar.")
+    print(" ¡DoBot listo! Escribe 'salir' para terminar.")
     while True:
         user_question = input("Tú: ")
         if user_question.lower() == "salir":
-            print("👋 Adiós.")
+            print(" Adiós.")
             break
         
-        print("🤖 DoBot: Procesando...")
+        print(" DoBot: Procesando...")
         try:
             response = chatbot.answer_question(user_question)
             
@@ -64,7 +64,7 @@ def chat_loop(chatbot: RAGChatbot):
             print("-" * 50)
             
         except Exception as e:
-            print(f"❌ Ocurrió un error al procesar la pregunta: {e}")
+            print(f" Ocurrió un error al procesar la pregunta: {e}")
 
 def main():
     """
@@ -78,7 +78,7 @@ def main():
     
     # 2. Seleccionar el modelo de lenguaje
     llm_model_name = select_llm_model(model_manager)
-    print(f"✅ Usando el modelo de lenguaje: {llm_model_name}")
+    print(f" Usando el modelo de lenguaje: {llm_model_name}")
     llm = model_manager.create_llm(llm_model_name)
     
     # 3. Cargar la base de datos vectorial

@@ -27,7 +27,7 @@ class OllamaModelManager:
         """
         return self.available_models
     
-    def create_llm(self, model_name: str, temperature: float = 0.7) -> OllamaLLM:
+    def create_llm(self, model_name: str, temperature: float = 0.2) -> OllamaLLM:
         """
         Crea una instancia del modelo LLM seleccionado.
         
