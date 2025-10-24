@@ -5,7 +5,15 @@ from src.models.ollama_manager import OllamaModelManager
 
 def initialize_session_state():
 
-    pass
+    """Inicializa variables de sesión de Streamlit."""
+    if "vector_store" not in st.session_state:
+        st.session_state.vector_store = None
+    if "chatbot" not in st.session_state:
+        st.session_state.chatbot = None
+    if "selected_model" not in st.session_state:
+        st.session_state.selected_model = "mistral"
+    if "chat_history" not in st.session_state:
+        st.session_state.chat_history = []
 
 
 def setup_sidebar(selected_model: str, temperature: float):
