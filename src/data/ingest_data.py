@@ -93,6 +93,6 @@ def ingest_data(pdf_dir: Path):
     
 if __name__ == "__main__":
 
-    pdf_dir = Path("./manuals")
+    pdf_dir = Path("../../manuals")
     persist_dir = Path("./chroma_db")
     ingest_data(pdf_dir)

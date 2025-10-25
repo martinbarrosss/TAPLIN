@@ -93,6 +93,18 @@ def main():
             st.session_state.chat_history = []
             st.rerun()
         
+        # Añadimos un expander que funciona como un botón para ver el historial
+        with st.expander(" Revisar Historial de la Sesión", expanded=False):
+            if not st.session_state.chat_history:
+                st.caption("El historial de esta sesión está vacío.")
+            else:
+                # Iteramos y mostramos de forma compacta
+                for msg in st.session_state.chat_history:
+                    if msg["role"] == "user":
+                        st.markdown(f"**Tú:** {msg['content']}")
+                    else:
+                        st.markdown(f"**Asistente:** {msg['content']}")
+
         st.markdown("---")
         st.markdown(
             "**Modelo RAG:**\n"
