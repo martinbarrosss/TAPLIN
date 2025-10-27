@@ -1,6 +1,6 @@
 *_env
 
-manuals/
-chroma_db/
+
+
 __pycache__/
 .venv/

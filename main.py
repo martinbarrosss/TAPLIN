@@ -26,7 +26,7 @@ def main():
     )
     
     selected_model, temperature = setup_sidebar(
-        st.session_state.selected_model, 0.7
+        st.session_state.selected_model, 0.1
     )
     
     col1, col2 = st.columns([2, 1])

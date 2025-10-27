@@ -3,7 +3,7 @@ from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
 # Asume que la base de datos está en la raíz del proyecto.
-PERSIST_DIR = "./src/chroma_db" 
+PERSIST_DIR = "./chroma_db" 
 
 def load_vector_store(persist_dir: str = PERSIST_DIR):
     """Carga la base de datos vectorial persistente."""
