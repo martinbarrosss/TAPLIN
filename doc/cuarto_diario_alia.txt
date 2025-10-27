@@ -9,6 +9,9 @@ ALIA es una iniciativa pionera en la Unión Europea (Española) que busca propor
 pública de recursos de IA, como modelos de lenguaje abiertos y transparentes, para fomentar el
 impulso del castellano y lenguas cooficiales -catalán y valenciano, euskera y gallego- en el 
 desarrollo y despliegue de la IA en el mundo.
+
+
+URL de alia-kit:    https://langtech-bsc.gitbook.io/alia-kit
 ---<>---<>---<>---<>
 
 Se investigó sobre su gama de modelos y ofrecían varias alternativas de traducción general y
