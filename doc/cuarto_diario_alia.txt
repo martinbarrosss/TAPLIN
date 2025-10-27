@@ -1,0 +1,21 @@
+Alia --- LLM orientado a la traducción --- 27/10
+
+Para que el sistema RAG pudiese abarcar prompts en mútiples idiomas se investigó sobre 
+LLMs especializados en la traducción de lenguas autóctonas españolas.
+Se encontró el proyecto ALIA, ¿qué es ALIA?
+
+---<>---<>---<>---<>
+ALIA es una iniciativa pionera en la Unión Europea (Española) que busca proporcionar una infraestructura
+pública de recursos de IA, como modelos de lenguaje abiertos y transparentes, para fomentar el
+impulso del castellano y lenguas cooficiales -catalán y valenciano, euskera y gallego- en el 
+desarrollo y despliegue de la IA en el mundo.
+
+
+URL de alia-kit:    https://langtech-bsc.gitbook.io/alia-kit
+---<>---<>---<>---<>
+
+Se investigó sobre su gama de modelos y ofrecían varias alternativas de traducción general y
+de traducciones especializadas 1 a 1. Se encontraron más concretamente modelos como
+Salamandra(traducción general) o Aitana(traducción específica) pero debido a que debían
+ser ejecutados en local se decidió posponer su implementación y tratar de llegar a esas 
+traducciones mediante el modelo gpt-oss. 
