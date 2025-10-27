@@ -1,12 +1,17 @@
-from langchain.prompts import PromptTemplate
+# --- RAGChatbot.py ---
+# (Versión modificada para usar el prompt externo)
+
 from langchain.chains import RetrievalQA
 from langchain_community.vectorstores import Chroma
 from langchain_ollama import OllamaLLM
+# Importamos el prompt pre-configurado desde el nuevo archivo
+from src.models.prompt_config import RAG_PROMPT
 
 
 class RAGChatbot:
     """
     Implementa la lógica del chatbot con arquitectura RAG.
+    Ahora importa el prompt desde prompt_config.py
     """
     
     def __init__(self, vector_store: Chroma, llm: OllamaLLM):
@@ -27,34 +32,21 @@ class RAGChatbot:
     
     def _create_qa_chain(self) -> RetrievalQA:
         """
-        Crea la cadena de preguntas y respuestas.
+        Crea la cadena de preguntas y respuestas usando el prompt importado.
         
         Returns:
             Objeto RetrievalQA configurado
         """
-        # Template personalizado para el prompt
-        prompt_template = """Eres un asistente experto en electrodomésticos.
-        Responde la pregunta basándote ÚNICAMENTE en el siguiente contenido de manuales.
-        Si la información no está disponible en los manuales, indícalo claramente.
-
-        Contexto de los manuales:
-        {context}
-
-        Pregunta: {question}
-
-        Respuesta:"""
         
-        prompt = PromptTemplate(
-            template=prompt_template,
-            input_variables=["context", "question"]
-        )
+        # Ya no definimos el template aquí.
+        # Usamos directamente el objeto RAG_PROMPT importado de prompt_config.py
         
         qa_chain = RetrievalQA.from_chain_type(
             llm=self.llm,
             chain_type="stuff",
             retriever=self.retriever,
             return_source_documents=True,
-            chain_type_kwargs={"prompt": prompt}
+            chain_type_kwargs={"prompt": RAG_PROMPT}
         )
         
         return qa_chain
@@ -66,7 +58,7 @@ class RAGChatbot:
         Secuencia:
         1. Recibe la pregunta del usuario
         2. Busca fragmentos relevantes en la BD vectorial
-        3. Formula prompt con contexto
+        3. Formula prompt con contexto (usando RAG_PROMPT)
         4. Envía al modelo Ollama
         5. Retorna respuesta y fuentes
         
