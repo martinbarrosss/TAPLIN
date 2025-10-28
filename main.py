@@ -25,13 +25,21 @@ def main():
         "precisas basadas en el contenido real."
     )
     
-    selected_model, temperature = setup_sidebar(
-        st.session_state.selected_model, 0.1
+    # Configura la barra lateral y guarda la temperatura en el estado de sesión
+    selected_model, new_temp = setup_sidebar(
+        st.session_state.selected_model, 
+        st.session_state.temperature  # Lee la temperatura del estado
     )
     
-    col1, col2 = st.columns([2, 1])
+    # Guarda la temperatura seleccionada en el slider de vuelta al estado
+    st.session_state.temperature = new_temp 
     
-    with col1:
+    # Define las pestañas en lugar de las columnas
+    tab_chat, tab_info, tab_historial = st.tabs(["💬 Chat", "ℹ️ Información", "📜 Historial"])
+    
+    # Pestaña de Chat
+    with tab_chat:
+
         st.subheader("Chat")
         
         if st.session_state.chatbot is None:
@@ -48,14 +56,20 @@ def main():
                         st.session_state.vector_store = vector_store
                         
                         model_manager = OllamaModelManager()
-                        llm = model_manager.create_llm(selected_model, temperature=temperature)
+                        # Usa la temperatura del estado de sesión
+                        llm = model_manager.create_llm(
+                            selected_model, 
+                            temperature=st.session_state.temperature
+                        )
                         st.session_state.chatbot = RAGChatbot(vector_store, llm)
                         st.success(" Sistema RAG inicializado correctamente")
                 
                 except Exception as e:
                     st.error(f"Error al inicializar: {str(e)}")
         
+        # Historial de chat (visualización principal)
         for msg in st.session_state.chat_history:
+
             st.chat_message(msg["role"]).write(msg["content"])
         
         user_question = st.chat_input("Escribe tu pregunta sobre los manuales...", key="user_input")
@@ -80,30 +94,15 @@ def main():
                 except Exception as e:
                     st.error(f"Error al procesar: {str(e)}")
     
-    with col2:
-        st.subheader(" Información")
+    # Pestaña de Información
+    with tab_info:
+        st.subheader("Información del Sistema")
         
         st.metric("Modelo activo", st.session_state.selected_model)
-        st.metric("Temperatura", f"{temperature:.1f}")
+        st.metric("Temperatura", f"{st.session_state.temperature:.1f}")
         
         if st.session_state.chat_history:
             st.metric("Mensajes en sesión", len(st.session_state.chat_history))
-        
-        if st.button(" Limpiar historial"):
-            st.session_state.chat_history = []
-            st.rerun()
-        
-        # Añadimos un expander que funciona como un botón para ver el historial
-        with st.expander(" Revisar Historial de la Sesión", expanded=False):
-            if not st.session_state.chat_history:
-                st.caption("El historial de esta sesión está vacío.")
-            else:
-                # Iteramos y mostramos de forma compacta
-                for msg in st.session_state.chat_history:
-                    if msg["role"] == "user":
-                        st.markdown(f"**Tú:** {msg['content']}")
-                    else:
-                        st.markdown(f"**Asistente:** {msg['content']}")
 
         st.markdown("---")
         st.markdown(
@@ -112,6 +111,28 @@ def main():
             "- LangChain para orquestación\n"
             "- Ollama para inferencia (Local/Cloud)"
         )
+
+    # Pestaña de Historial
+    with tab_historial:
+
+        st.subheader("Revisar Historial de la Sesión")
+
+        if st.button("🗑️ Limpiar historial"):
+            st.session_state.chat_history = []
+            st.rerun()
+        
+        st.markdown("---")
+
+        if not st.session_state.chat_history:
+            st.caption("El historial de esta sesión está vacío.")
+        else:
+            # Iteramos y mostramos de forma compacta (como en tu expander original)
+            for msg in st.session_state.chat_history:
+                if msg["role"] == "user":
+                    st.markdown(f"**Tú:** {msg['content']}")
+                else:
+                    st.markdown(f"**Asistente:** {msg['content']}")
+                st.markdown("---") # Separador
 
 if __name__ == "__main__":
     main()

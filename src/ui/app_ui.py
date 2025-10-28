@@ -14,6 +14,9 @@ def initialize_session_state():
         st.session_state.selected_model = "mistral"
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = []
+    # --- AÑADIDO ---
+    if "temperature" not in st.session_state:
+        st.session_state.temperature = 0.1 # Valor inicial por defecto
 
 
 def setup_sidebar(selected_model: str, temperature: float):
@@ -36,11 +39,12 @@ def setup_sidebar(selected_model: str, temperature: float):
         
         st.markdown("---")
         
+        # El slider ahora usa 'temperature' (del session_state) como valor inicial
         temperature = st.slider(
             "Temperatura (creatividad del modelo):",
             min_value=0.0,
             max_value=1.0,
-            value=temperature,
+            value=temperature, 
             step=0.1
         )
         
@@ -52,4 +56,5 @@ def setup_sidebar(selected_model: str, temperature: float):
             "basadas en manuales de electrodomésticos.\n\n"
         )
         
+        # Retorna el modelo y la temperatura seleccionada
         return selected_model, temperature
