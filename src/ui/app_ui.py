@@ -1,10 +1,11 @@
+# src/ui/app_ui.py
+
 import streamlit as st
 import os
 
 from src.models.ollama_manager import OllamaModelManager
 
 def initialize_session_state():
-
     """Inicializa variables de sesión de Streamlit."""
     if "vector_store" not in st.session_state:
         st.session_state.vector_store = None
@@ -14,18 +15,21 @@ def initialize_session_state():
         st.session_state.selected_model = "mistral"
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = []
-    # --- AÑADIDO ---
     if "temperature" not in st.session_state:
-        st.session_state.temperature = 0.1 # Valor inicial por defecto
+        st.session_state.temperature = 0.1
+    # --- NUEVA VARIABLE DE ESTADO ---
+    if "language" not in st.session_state:
+        st.session_state.language = "es" # Idioma por defecto: Español
 
 
-def setup_sidebar(selected_model: str, temperature: float):
+def setup_sidebar(selected_model: str, temperature: float, current_language: str):
+    """Configura la barra lateral de Streamlit (Modelo, Temperatura e Idioma)."""
     
-    """Configura la barra lateral de Streamlit (Modelo y Temperatura)."""
     with st.sidebar:
         st.title(" Configuración")
         
-        model_manager = OllamaModelManager() #instancia del gestor de modelos
+        # 1. Selector de Modelo 
+        model_manager = OllamaModelManager()
         available_models = model_manager.get_available_models()
         
         selected_model = st.selectbox(
@@ -34,12 +38,25 @@ def setup_sidebar(selected_model: str, temperature: float):
             index=available_models.index(selected_model)
             if selected_model in available_models else 0
         )
-        
         st.session_state.selected_model = selected_model
         
         st.markdown("---")
         
-        # El slider ahora usa 'temperature' (del session_state) como valor inicial
+        # 2. Selector de Idioma 
+        selected_option = st.selectbox(
+            "Idioma de la conversación:",
+            options=["Español (es)", "Gallego (gl)"],
+            index=0 if current_language == "es" else 1,
+            format_func=lambda x: x.split(" ")[0] # Muestra solo el nombre
+        )
+        # Extrae el código ('es' o 'gl') de la opción seleccionada
+        new_language = selected_option.split("(")[1].replace(")", "").strip() 
+        
+        st.session_state.language = new_language
+        
+        st.markdown("---")
+
+        # 3. Slider de Temperatura
         temperature = st.slider(
             "Temperatura (creatividad del modelo):",
             min_value=0.0,
@@ -56,5 +73,5 @@ def setup_sidebar(selected_model: str, temperature: float):
             "basadas en manuales de electrodomésticos.\n\n"
         )
         
-        # Retorna el modelo y la temperatura seleccionada
-        return selected_model, temperature
+        # Retorna los 3 valores actualizados: modelo, temperatura y nuevo idioma
+        return selected_model, temperature, new_language

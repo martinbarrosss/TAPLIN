@@ -1,27 +1,41 @@
-# renders.py
+# src/ui/renders.py
 import streamlit as st
 
 # --- Funciones de Renderizado (Pestañas) ---
 
 def render_tab_chat():
     """Lógica y renderizado de la pestaña de Chat (manejo de la conversación)."""
-    st.subheader("Chat")
+    
+    # Determinamos el idioma de la conversación
+    idioma = st.session_state.language 
+    
+    # Etiqueta para el usuario
+    st.subheader(f"Chat en {idioma.upper()}") 
     
     # Historial de chat (visualización principal)
     for msg in st.session_state.chat_history:
         st.chat_message(msg["role"]).write(msg["content"])
     
-    user_question = st.chat_input("Escribe tu pregunta sobre los manuales...", key="user_input")
+    # Campo de entrada de texto
+    user_question = st.chat_input(
+        f"Escribe tu pregunta sobre los manuales en {idioma.upper()}...", 
+        key="user_input"
+    )
     
     # Bloque de Lógica de Respuesta del Chat
-    if user_question and st.session_state.chatbot:
+    if user_question and st.session_state.chatbot: 
         st.session_state.chat_history.append({"role": "user", "content": user_question})
         st.chat_message("user").write(user_question)
         
-        with st.spinner(" Buscando información..."):
+        with st.spinner(f" ⚙️ Procesando consulta y traduciendo a {idioma.upper()}..."):
             try:
-                response = st.session_state.chatbot.answer_question(user_question)
+                # LLAMADA AL SERVICIO MULTILINGÜE
+                response = st.session_state.chatbot.answer_question(
+                    user_question, 
+                    idioma # PASAMOS el idioma seleccionado por el usuario
+                )
                 
+                # Impresión de la respuesta
                 st.chat_message("assistant").write(response["answer"])
                 
                 if response["sources"]:
@@ -40,6 +54,8 @@ def render_tab_info():
     
     st.metric("Modelo activo", st.session_state.selected_model)
     st.metric("Temperatura", f"{st.session_state.temperature:.1f}")
+    # NUEVO: Mostrar el idioma
+    st.metric("Idioma de la sesión", st.session_state.language.upper())
     
     if st.session_state.chat_history:
         st.metric("Mensajes en sesión", len(st.session_state.chat_history))
@@ -49,7 +65,8 @@ def render_tab_info():
         "**Modelo RAG:**\n"
         "- ChromaDB para almacenamiento vectorial\n"
         "- LangChain para orquestación\n"
-        "- Ollama para inferencia (Local/Cloud)"
+        "- Ollama para inferencia (Local/Cloud)\n"
+        "- **Traductor:** Helsinki-NLP (GL <-> ES)" # Resaltamos la capacidad de traducción
     )
 
 def render_tab_history():
@@ -70,4 +87,4 @@ def render_tab_history():
                 st.markdown(f"**Tú:** {msg['content']}")
             else:
                 st.markdown(f"**Asistente:** {msg['content']}")
-            st.markdown("---") # Separador
+            st.markdown("---")
