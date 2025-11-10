@@ -1,4 +1,5 @@
 # src/ui/app_ui.py
+# MODIFICADO
 
 import streamlit as st
 import os
@@ -20,45 +21,54 @@ def initialize_session_state():
     # --- NUEVA VARIABLE DE ESTADO ---
     if "language" not in st.session_state:
         st.session_state.language = "es" # Idioma por defecto: Español
+    # Variable para gestionar las fuentes del último mensaje
+    if "last_sources" not in st.session_state:
+        st.session_state.last_sources = []
 
 
-def setup_sidebar(selected_model: str, temperature: float, current_language: str):
+def setup_sidebar(selected_model: str, temperature: float, current_language: str, t): # Acepta 't'
     """Configura la barra lateral de Streamlit (Modelo, Temperatura e Idioma)."""
     
     with st.sidebar:
-        st.title(" Configuración")
+        st.title(t("sidebar_title")) # <-- MODIFICADO
         
         # 1. Selector de Modelo 
         model_manager = OllamaModelManager()
         available_models = model_manager.get_available_models()
         
         selected_model = st.selectbox(
-            "Selecciona el modelo Ollama:",
+            t("sidebar_model_select"), # <-- MODIFICADO
             options=available_models,
             index=available_models.index(selected_model)
             if selected_model in available_models else 0
         )
-        st.session_state.selected_model = selected_model
         
         st.markdown("---")
         
-        # 2. Selector de Idioma 
-        selected_option = st.selectbox(
-            "Idioma de la conversación:",
-            options=["Español (es)", "Gallego (gl)"],
-            index=0 if current_language == "es" else 1,
-            format_func=lambda x: x.split(" ")[0] # Muestra solo el nombre
+        # 2. Selector de Idioma (MODIFICADO)
+        # Usamos las claves 'es' y 'gl' para la lógica, y 't' para el display
+        lang_options_display = {
+            "es": t("sidebar_lang_es"), # "Español (es)"
+            "gl": t("sidebar_lang_gl")  # "Gallego (gl)"
+        }
+        lang_keys = list(lang_options_display.keys())
+        lang_display_names = list(lang_options_display.values())
+
+        selected_display_name = st.selectbox(
+            t("sidebar_lang_select"), # <-- MODIFICADO
+            options=lang_display_names,
+            index=lang_keys.index(current_language), # Usa el 'es' o 'gl' actual
+            format_func=lambda x: x.split(" (")[0] # Muestra solo "Español" o "Gallego"
         )
-        # Extrae el código ('es' o 'gl') de la opción seleccionada
-        new_language = selected_option.split("(")[1].replace(")", "").strip() 
         
-        st.session_state.language = new_language
+        # Encontramos la clave ('es' o 'gl') basada en el nombre mostrado
+        new_language = lang_keys[lang_display_names.index(selected_display_name)]
         
         st.markdown("---")
 
         # 3. Slider de Temperatura
         temperature = st.slider(
-            "Temperatura (creatividad del modelo):",
+            t("sidebar_temp_slider"), # <-- MODIFICADO
             min_value=0.0,
             max_value=1.0,
             value=temperature, 
@@ -68,9 +78,8 @@ def setup_sidebar(selected_model: str, temperature: float, current_language: str
         st.markdown("---")
         
         st.info(
-            " **Información**\n\n"
-            "Este chatbot utiliza RAG para responder preguntas "
-            "basadas en manuales de electrodomésticos.\n\n"
+            f" **{t('sidebar_info_title')}**\n\n" # <-- MODIFICADO
+            f"{t('sidebar_info_body')}\n\n" # <-- MODIFICADO
         )
         
         # Retorna los 3 valores actualizados: modelo, temperatura y nuevo idioma
