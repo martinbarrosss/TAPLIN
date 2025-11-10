@@ -1,0 +1,18 @@
+Se probó e investigó sobre distintos modelos de traducción como con el proyecto NOS y Helsinki-nlp opus.
+
+A diferencia de los anteriores modelos ivnestigados, estos eran específicamente de traduccion
+gallego-español y viceversa, dejando de lado el intento de abarcar todas las lenguas de España.
+
+Se decidió por el Helsinki-nlp opus ya que tenía más apoyo y mejor documentación.
+
+---<>---<>---<>---<>---<>---<>---<>---<>---<>---<>---<>---<>---<>---<>---<>---<>---
+
+No solo se investigó, se integro ya dentro del flujo la opcion de escoger -> gallego o castellano
+
+el core del proyecto sigue siendo en castellano, el RAG funciona en castellano, y en caso de seleccionar
+gallego el flujo es el siguiente:
+
+prompt gl -> traduccion es -> RAG -> respuesta es -> traduccion gl
+
+se empezo probando el flujo en el chat_consola y al ver unos resultados "aparentemente decentes"
+se integró ya en la web con un botón de configuracion para escoger idioma
