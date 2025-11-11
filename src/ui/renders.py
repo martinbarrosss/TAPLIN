@@ -1,7 +1,8 @@
 # src/ui/renders.py
-# MODIFICADO (Barra de chat abajo)
+# MODIFICADO (Auto-scroll al fondo)
 
 import streamlit as st
+import streamlit.components.v1 as components # <-- NUEVA IMPORTACIÓN
 
 # --- Funciones de Renderizado (Pestañas) ---
 
@@ -14,15 +15,13 @@ def render_tab_chat(t): # <-- Acepta 't'
     # Etiqueta para el usuario
     st.subheader(t("chat_subheader", lang=idioma.upper()))
     
-    # --- CAMBIO: Historial de chat (visualización principal) ---
-    # Se renderiza ANTES del input para que el input quede abajo.
+    # --- Historial de chat (visualización principal) ---
     history = st.session_state.chat_history
     
-    # Iteramos en orden normal (0, 1, 2...)
     for i, msg in enumerate(history): 
         st.chat_message(msg["role"]).write(msg["content"])
         
-        # Mostrar fuentes solo en el mensaje MÁS RECIENTE (que ahora es el último)
+        # Mostrar fuentes solo en el mensaje MÁS RECIENTE
         if (i == len(history) - 1 and 
             msg["role"] == "assistant" and 
             st.session_state.get("last_sources")):
@@ -33,38 +32,50 @@ def render_tab_chat(t): # <-- Acepta 't'
             st.session_state.last_sources = [] # Limpiamos
 
 
-    # --- CAMBIO: Input en la parte inferior (estándar) ---
+    # --- Input en la parte inferior (estándar) ---
     user_question = st.chat_input(
         t("chat_input_placeholder", lang=idioma.upper()), 
         key="user_input"
     )
 
-    # --- Lógica de Respuesta (Debe ir después del input) ---
+    # --- Lógica de Respuesta ---
     if user_question and st.session_state.chatbot: 
         st.session_state.chat_history.append({"role": "user", "content": user_question})
         
         response = None
         with st.spinner(t("chat_spinner", lang=idioma.upper())):
             try:
-                # LLAMADA AL SERVICIO MULTILINGÜE
                 response = st.session_state.chatbot.answer_question(
                     user_question, 
-                    idioma # PASAMOS el idioma seleccionado por el usuario
+                    idioma
                 )
-                
             except Exception as e:
                 st.error(t("chat_error", error=str(e))) 
 
-        # Añadimos la respuesta (si la hubo)
         if response:
             st.session_state.chat_history.append({"role": "assistant", "content": response["answer"]})
-            # Guardamos las fuentes para el próximo renderizado
             st.session_state.last_sources = response["sources"]
         else:
             st.session_state.last_sources = []
         
-        # Forzamos un rerun para que el historial (arriba) se actualice
+        # El st.rerun() sigue siendo necesario para refrescar
         st.rerun()
+    
+    # --- NUEVO: SCRIPT DE AUTO-SCROLL ---
+    # Este script se ejecuta en cada renderizado (después del rerun)
+    # y fuerza el scroll de la página al fondo.
+    # El 'setTimeout' da un breve instante (50ms) para que el DOM se
+    # termine de pintar antes de intentar hacer scroll.
+    components.html(
+        """
+        <script>
+            setTimeout(function(){
+                window.scrollTo(0, document.body.scrollHeight);
+            }, 50);
+        </script>
+        """,
+        height=0, # No ocupa espacio visible
+    )
 
 
 def render_tab_info(t): # <-- Acepta 't'
@@ -90,7 +101,7 @@ def render_tab_history(t): # <-- Acepta 't'
 
     if st.button(t("history_button_clear")): 
         st.session_state.chat_history = []
-        st.session_state.last_sources = [] # Limpiamos fuentes también
+        st.session_state.last_sources = [] 
         st.rerun()
     
     st.markdown("---")
