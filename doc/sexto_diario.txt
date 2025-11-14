@@ -1,0 +1,13 @@
+Como ya se tenía, en principio, integrado el flujo completo del RAG, 
+con la posibilidad de hacer consultas en gallego, se decidio desarrollar la capacidad
+de hacer pruebas por lotes para poder hacer comparativas entre los 4 modelos que se ofertan
+actualmente en la interfaz.
+
+se creo un script llamado "batch_tester" que se encarga de leer un csv con las columnas
+query y language(es o gl), itera sobre todos los modelos disponibles obteniendo todas las
+distintas respuestas y volcandolo en memoria sobre un nuevo csv con filas:
+query, language y una columna por modelo, donde está dicha respuesta.
+
+se probó el correcto funcionamiento del flujo con un dataset de prompts de prueba
+y la visualizacion de estos resultados con el archivo view_results, donde puedes escoger
+una de las preguntas del csv y te enseña por consola todos los outputs asociados.
