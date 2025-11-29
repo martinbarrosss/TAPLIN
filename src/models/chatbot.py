@@ -52,26 +52,27 @@ class RAGChatbot:
         return qa_chain
     
     def answer_question(self, question: str):
+        
         """
-        Procesa una pregunta y retorna la respuesta basada en RAG.
-        
-        Secuencia:
-        1. Recibe la pregunta del usuario
-        2. Busca fragmentos relevantes en la BD vectorial
-        3. Formula prompt con contexto (usando RAG_PROMPT)
-        4. Envía al modelo Ollama
-        5. Retorna respuesta y fuentes
-        
-        Args:
-            question: Pregunta del usuario
-            
-        Returns:
-            Diccionario con respuesta y fuentes
+        Retorna: Diccionario con respuesta, fuentes y la sugerencia oculta.
         """
         result = self.qa_chain.invoke({"query": question})
+        raw_output = result["result"]
+        
+        # Lógica para separar la respuesta de la sugerencia
+        answer_text = raw_output
+        suggested_q = None
+        
+        if "|||" in raw_output:
+            parts = raw_output.split("|||")
+            answer_text = parts[0].strip()
+            # La segunda parte es la pregunta técnica para la "memoria"
+            if len(parts) > 1:
+                suggested_q = parts[1].strip()
         
         response_dict = {
-            "answer": result["result"],
+            "answer": answer_text,
+            "suggested_question": suggested_q, # Nuevo campo
             "sources": [
                 doc.metadata.get("source", "Unknown") 
                 for doc in result["source_documents"]
