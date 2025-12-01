@@ -14,7 +14,6 @@ from src.utils.app_utils import load_vector_store
 
 # --- Rutas Base (Carpeta donde se encuentran los archivos) ---
 # Usamos os.path.join para construir rutas robustas
-# Nota: Asumo que la carpeta padre de input/output es 'testing' o 'tests' en la raíz del proyecto.
 INPUT_DIR = "testing/input"
 OUTPUT_DIR = "testing/output"
 
@@ -175,5 +174,7 @@ def run_batch_test_from_script(input_filename: str, output_filename: str):
 
 
 if __name__ == "__main__":
-    # Si se ejecuta directamente (ejecución por defecto), usa un nombre por defecto
-    run_batch_test_from_script("input_queries.csv", "output_results.csv")
+    # CAMBIAR ESTOS VALORES
+    input_file = "PromptsFrigo.csv"
+    output_file = "PromptsFrigoOut.csv"
+    run_batch_test_from_script(input_file, output_file)

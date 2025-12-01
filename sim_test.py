@@ -5,8 +5,8 @@ from src.pipeline.batch_tester import run_batch_test_from_script
 
 
 # --- CONFIGURACIÓN DE LA PRUEBA ---
-INPUT_FILE_NAME = "input_queries_ex.csv"
-OUTPUT_FILE_NAME = "test_results_v1.csv"
+INPUT_FILE_NAME = "PromptsFrigo.csv"
+OUTPUT_FILE_NAME = "FrigoResults.csv"
 
 def run_simulation():
     """
