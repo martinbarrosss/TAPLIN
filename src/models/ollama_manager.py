@@ -1,5 +1,6 @@
 from langchain_ollama import OllamaLLM
 import os
+import ollama
 
 class OllamaModelManager:
     """
@@ -13,19 +14,19 @@ class OllamaModelManager:
         self.base_url = os.getenv("OLLAMA_BASE_URL")
         # Lee la clave de API del entorno
         self.api_key = os.getenv("OLLAMA_API_KEY")
-        
-        self.available_models = [
-            "gpt-oss:20b-cloud",
-            "deepseek-v3.1:671b-cloud",
-            "kimi-k2:1t-cloud",
-            "qwen3-coder:480b-cloud"
-        ]
     
     def get_available_models(self) -> list:
         """
-        Retorna la lista de modelos disponibles.
+        Retorna la lista de modelos disponibles en el servidor de Ollama.
         """
-        return self.available_models
+        try:
+            # Obtiene la lista de modelos del servidor Ollama
+            models_info = ollama.list()
+            # Extrae solo los nombres de los modelos
+            return [model['name'] for model in models_info['models']]
+        except Exception as e:
+            print(f"⚠️  Advertencia: No se pudo conectar con el servidor de Ollama para obtener los modelos. {e}")
+            return []
     
     def create_llm(self, model_name: str, temperature: float = 0.2) -> OllamaLLM:
         """

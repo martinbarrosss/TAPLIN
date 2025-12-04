@@ -1,25 +1,69 @@
 # sim_test.py
 
-# Importa la función de orquestación desde tu script
-from src.pipeline.batch_tester import run_batch_test_from_script
-
+import argparse
+import sys
+# Importamos la función ORQUESTADORA correcta del otro script
+from src.pipeline.batch_tester import run_evaluation_batch
 
 # --- CONFIGURACIÓN DE LA PRUEBA ---
 INPUT_FILE_NAME = "PromptsFrigo.csv"
-OUTPUT_FILE_NAME = "FrigoResults.csv"
+OUTPUT_FILE_NAME = "FrigoResultsKimi.csv"
+# ------------------
+DEFAULT_JUDGE = "gpt-oss:20b-cloud"  # El modelo juez por defecto
 
-def run_simulation():
+# --- LISTA DE MODELOS OFICIALES ---
+AVAILABLE_MODELS = [
+    "gpt-oss:20b-cloud",
+    "deepseek-v3.1:671b-cloud",
+    "kimi-k2:1t-cloud",
+    "qwen3-coder:480b-cloud"
+]
+
+def select_model_interactively():
+    """Muestra un menú para elegir el modelo si no se pasó por argumento."""
+    print("\n--- 🤖 SELECCIÓN DE MODELO PARA SIMULACIÓN ---")
+    for i, model_name in enumerate(AVAILABLE_MODELS):
+        print(f"  [{i+1}] {model_name}")
+    
+    while True:
+        try:
+            choice_raw = input(f"\nSelecciona el número del modelo (1-{len(AVAILABLE_MODELS)}): ")
+            choice = int(choice_raw) - 1
+            if 0 <= choice < len(AVAILABLE_MODELS):
+                return AVAILABLE_MODELS[choice]
+            else:
+                print("❌ Opción no válida. Intenta de nuevo.")
+        except ValueError:
+            print("❌ Por favor, introduce un número válido.")
+
+def run_simulation(target_model: str = None):
     """
-    Función que simula el punto de entrada para las pruebas.
+    Función principal del simulador.
     """
     print("==============================================")
     print("   INICIO DEL SIMULADOR DE PRUEBAS MASIVAS    ")
     print("==============================================")
     
-    # Llama a la función principal del batch_tester, pasándole los nombres de archivo
-    run_batch_test_from_script(
+    selected_model = target_model
+
+    # Si no se especificó modelo por argumentos, preguntamos al usuario
+    if not selected_model:
+        selected_model = select_model_interactively()
+    else:
+        # Validamos si el modelo pasado por argumento es conocido (opcional, solo aviso)
+        if selected_model not in AVAILABLE_MODELS:
+            print(f"⚠️  Aviso: El modelo '{selected_model}' no está en la lista oficial, pero se intentará usar.")
+
+    print(f"\n✅ Modelo seleccionado: {selected_model}")
+    print(f"⚖️  Juez asignado: {DEFAULT_JUDGE}")
+
+    # Llamamos a la función de batch_tester con los parámetros correctos
+    # Nota: models_to_test espera una lista, así que ponemos [selected_model]
+    run_evaluation_batch(
         input_filename=INPUT_FILE_NAME,
-        output_filename=OUTPUT_FILE_NAME
+        output_filename=OUTPUT_FILE_NAME,
+        models_to_test=[selected_model], 
+        judge_model=DEFAULT_JUDGE
     )
     
     print("\n==============================================")
@@ -28,4 +72,19 @@ def run_simulation():
 
 
 if __name__ == "__main__":
-    run_simulation()
+    parser = argparse.ArgumentParser(
+        description="Ejecuta pruebas masivas contra modelos de lenguaje."
+    )
+    parser.add_argument(
+        "--model",
+        default=None,
+        help="(Opcional) Nombre del modelo. Si se omite, se abrirá un menú interactivo."
+    )
+    
+    args = parser.parse_args()
+    
+    try:
+        run_simulation(target_model=args.model)
+    except KeyboardInterrupt:
+        print("\n\n🛑 Ejecución interrumpida por el usuario.")
+        sys.exit(0)

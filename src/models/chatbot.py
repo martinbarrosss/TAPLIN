@@ -73,10 +73,7 @@ class RAGChatbot:
         response_dict = {
             "answer": answer_text,
             "suggested_question": suggested_q, # Nuevo campo
-            "sources": [
-                doc.metadata.get("source", "Unknown") 
-                for doc in result["source_documents"]
-            ]
+            "sources": result["source_documents"]
         }
         
         return response_dict
