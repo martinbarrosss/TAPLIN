@@ -46,7 +46,7 @@ class RAGMultilingualService:
         final_text_es = respuesta_rag_es
         if nueva_sugerencia:
             # Añadimos el gancho visual al final de la respuesta
-            final_text_es += f"\n\n_¿Te gustaría saber {nueva_sugerencia.lower()}?_"
+            final_text_es += f"\n\n_{nueva_sugerencia.lower()}_"
 
         # 4. TRADUCCIÓN DE VUELTA (es -> gl)
         final_response = final_text_es
