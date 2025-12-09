@@ -1,6 +1,6 @@
 from langchain_ollama import OllamaLLM
 import os
-import ollama
+# Ya no necesitamos importar 'ollama' ni 'Client' porque no vamos a listar nada
 
 class OllamaModelManager:
     """
@@ -8,38 +8,35 @@ class OllamaModelManager:
     """
     
     def __init__(self):
-        """
-        Inicializa el gestor de modelos Ollama leyendo la URL y clave del entorno.
-        """
-        self.base_url = os.getenv("OLLAMA_BASE_URL")
-        # Lee la clave de API del entorno
+        # Configuración de la URL (Mantenemos la lógica de seguridad para localhost)
+        # Esto sigue siendo necesario para cuando enviemos los mensajes del chat
+        env_url = os.getenv("OLLAMA_BASE_URL", "")
+        
+        if "ollama.com" in env_url and not os.getenv("OLLAMA_API_KEY"):
+            self.base_url = "http://127.0.0.1:11434"
+        elif "localhost" in env_url:
+            self.base_url = env_url.replace("localhost", "127.0.0.1")
+        else:
+            self.base_url = env_url if env_url else "http://127.0.0.1:11434"
+
         self.api_key = os.getenv("OLLAMA_API_KEY")
     
     def get_available_models(self) -> list:
         """
-        Retorna la lista de modelos disponibles en el servidor de Ollama.
+        Retorna una lista FIJA de modelos para evitar errores de conexión en Streamlit.
         """
-        try:
-            # Obtiene la lista de modelos del servidor Ollama
-            models_info = ollama.list()
-            # Extrae solo los nombres de los modelos
-            return [model['name'] for model in models_info['models']]
-        except Exception as e:
-            print(f"⚠️  Advertencia: No se pudo conectar con el servidor de Ollama para obtener los modelos. {e}")
-            return []
+        # Aquí pones exactamente los mismos que tienes en batch_tester.py
+        return [
+            "gpt-oss:20b-cloud",
+            "deepseek-v3.1:671b-cloud",
+            "kimi-k2:1t-cloud",
+            "qwen3-coder:480b-cloud"
+        ]
     
     def create_llm(self, model_name: str, temperature: float = 0.2) -> OllamaLLM:
         """
         Crea una instancia del modelo LLM seleccionado.
-        
-        Args:
-            model_name: Nombre del modelo a utilizar
-            temperature: Parámetro de creatividad del modelo (0-1)
-            
-        Returns:
-            Instancia de OllamaLLM
         """
-        # Configura los headers para la autenticación si se usa la nube
         headers = {}
         if self.api_key:
             headers['Authorization'] = f"Bearer {self.api_key}"
@@ -49,6 +46,6 @@ class OllamaModelManager:
             base_url=self.base_url,
             temperature=temperature,
             top_p=0.9,
-            headers=headers # Pasa los headers al cliente de LangChain
+            headers=headers
         )
         return llm

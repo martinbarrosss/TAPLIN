@@ -21,14 +21,25 @@ def render_tab_chat(t): # <-- Acepta 't'
     for i, msg in enumerate(history): 
         st.chat_message(msg["role"]).write(msg["content"])
         
-        # Mostrar fuentes solo en el mensaje MÁS RECIENTE
+        # Mostrar fuentes solo en el mensaje MÁS RECIENTE del asistente
         if (i == len(history) - 1 and 
             msg["role"] == "assistant" and 
             st.session_state.get("last_sources")):
             
             with st.expander(t("chat_expander_sources")): 
-                for source in set(st.session_state.last_sources):
-                    st.caption(f" {source}")
+                # --- CORRECCIÓN AQUÍ ---
+                # Extraemos solo los nombres de archivo de los objetos Document
+                unique_sources = set()
+                for doc in st.session_state.last_sources:
+                    # doc.metadata es un diccionario. Buscamos la clave "source"
+                    if hasattr(doc, 'metadata'):
+                        unique_sources.add(doc.metadata.get("source", "Desconocido"))
+                    else:
+                        unique_sources.add(str(doc)) # Fallback por seguridad
+
+                for source_name in unique_sources:
+                    st.caption(f"📄 {source_name}")
+            
             st.session_state.last_sources = [] # Limpiamos
 
 
@@ -54,6 +65,7 @@ def render_tab_chat(t): # <-- Acepta 't'
 
         if response:
             st.session_state.chat_history.append({"role": "assistant", "content": response["answer"]})
+            # Guardamos los objetos Document completos en el estado
             st.session_state.last_sources = response["sources"]
         else:
             st.session_state.last_sources = []
@@ -61,11 +73,7 @@ def render_tab_chat(t): # <-- Acepta 't'
         # El st.rerun() sigue siendo necesario para refrescar
         st.rerun()
     
-    # --- NUEVO: SCRIPT DE AUTO-SCROLL ---
-    # Este script se ejecuta en cada renderizado (después del rerun)
-    # y fuerza el scroll de la página al fondo.
-    # El 'setTimeout' da un breve instante (50ms) para que el DOM se
-    # termine de pintar antes de intentar hacer scroll.
+    # --- SCRIPT DE AUTO-SCROLL ---
     components.html(
         """
         <script>
@@ -74,7 +82,7 @@ def render_tab_chat(t): # <-- Acepta 't'
             }, 50);
         </script>
         """,
-        height=0, # No ocupa espacio visible
+        height=0, 
     )
 
 
