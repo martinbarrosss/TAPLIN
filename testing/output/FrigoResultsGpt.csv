@@ -1,7 +1,7 @@
 ﻿model;question;language;answer;sense_score;latency_seconds;context;sources
-gpt-oss:20b-cloud;¿Cuál es la altura máxima sobre el nivel del mar recomendada para usar el aparato? ;es;"La altura máxima recomendada es **4000 m sobre el nivel del mar**.
+gpt-oss:20b-cloud;¿Cuál es la altura máxima sobre el nivel del mar recomendada para usar el aparato? ;es;"La altura máxima recomendada sobre el nivel del mar para usar el aparato es **4000 m**.
 
-_¿Te gustaría saber ¿te gustaría saber cómo activar el seguro para niños??_";1.0;3.56;"nexión incorrecta no están cubiertos por la ga-
+_¿te gustaría saber cómo activar el seguro para niños?_";1.0;4.08;"nexión incorrecta no están cubiertos por la ga-
 rantía.
 Utilizar el aparato únicamente:
 ¡ para preparar bebidas y comidas.
@@ -93,9 +93,9 @@ programa tras unos 4 minutos.
 7. Apagar el aparato. 
  Página34
 8. Cerrar el grifo de agua.";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'Lavavajillas.pdf', 'Lavavajillas.pdf']
-gpt-oss:20b-cloud;¿Qué edad deben tener los niños para poder cargar y descargar el aparato?;es;"Los niños pueden usar el aparato a partir de **8 años** siempre que cuenten con la supervisión de una persona responsable o hayan sido instruidos previamente en su uso y comprendan los peligros que pueden derivarse del mismo. Además, se recomienda que no jueguen con el aparato y que se mantenga bajo supervisión al cargar y descargar.
+gpt-oss:20b-cloud;¿Qué edad deben tener los niños para poder cargar y descargar el aparato?;es;"Los niños pueden usar el aparato a partir de **8 años** siempre que cuenten con la supervisión de una persona responsable o hayan sido instruidos previamente en su uso y comprendan los riesgos.
 
-_¿Te gustaría saber ¿te gustaría saber cómo asegurar la supervisión adecuada al usar el aparato??_";1.0;3.62;"de armarios que pueda haber debajo.
+_¿te gustaría saber cómo asegurar la supervisión adecuada al usar el aparato?_";1.0;5.85;"de armarios que pueda haber debajo.
 Prestar atención a los niños al abrir y cerrar la puerta del apara-
 to.
 ADVERTENCIA ‒ ¡Riesgo de quemaduras químicas!
@@ -165,7 +165,7 @@ del cable de conexión.
 1.4 Instalación segura";['Lavavajillas.pdf', 'Lavavajillas.pdf', 'Lavavajillas.pdf', 'Lavavajillas.pdf']
 gpt-oss:20b-cloud;¿Cuántas personas son necesarias como mínimo para levantar el aparato? ;es;"Al menos dos personas deben levantar el aparato, ya que una sola persona no puede hacerlo.
 
-_¿Te gustaría saber ¿te gustaría saber cómo levantarlo de forma segura??_";1.0;3.09;"nexión incorrecta no están cubiertos por la ga-
+_¿te gustaría saber cómo levantarlo de forma segura?_";1.0;5.24;"nexión incorrecta no están cubiertos por la ga-
 rantía.
 Utilizar el aparato únicamente:
 ¡ para preparar bebidas y comidas.
@@ -240,7 +240,7 @@ drán ser efectuados por niños si no cuentan con la supervisión
 de una persona adulta responsable de su seguridad.";['HornoEmpotrado.pdf', 'Frigorifico.pdf', 'Lavavajillas.pdf', 'Frigorifico.pdf']
 gpt-oss:20b-cloud;¿Se pueden utilizar alargaderas o tomas de corriente múltiples? ;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿qué tipo de enchufe debe usar??_";1.0;4.69;"comprendido los peligros que pueden derivar-
+_¿te gustaría saber cómo conectar el aparato a una toma de corriente con protección contra sobretensiones?_";1.0;5.66;"comprendido los peligros que pueden derivar-
 se del mismo.
 2
 Seguridad es
@@ -340,9 +340,9 @@ rato con un dispositivo móvil para
 manejar las funciones a través de la
 aplicación Home Connect.
 Los servicios Home Connect no es-";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'Lavavajillas.pdf']
-gpt-oss:20b-cloud;¿Qué riesgo conlleva usar limpiadores por chorro de vapor en el aparato? ;es;"El uso de limpiadores por chorro de vapor puede dañar el aparato, ya que la alta presión y temperatura del vapor pueden afectar sus componentes internos y externos. Además, la infiltración de humedad puede provocar riesgos de descarga eléctrica. Por ello, el manual recomienda no emplear limpiadores de vapor ni de alta presión.
+gpt-oss:20b-cloud;¿Qué riesgo conlleva usar limpiadores por chorro de vapor en el aparato? ;es;"El manual indica que no se deben usar limpiadores por chorro de vapor ni de alta presión, ya que pueden dañar el aparato.
 
-_¿Te gustaría saber ¿te gustaría saber cuáles son los métodos de limpieza recomendados para tu lavavajillas??_";1.0;4.29;"Los cuchillos y utensilios cortantes pueden causar lesiones.
+_¿te gustaría saber cómo limpiar el exterior del lavavajillas de forma segura?_";1.0;8.52;"Los cuchillos y utensilios cortantes pueden causar lesiones.
 Colocar los cuchillos y utensilios cortantes o puntiagudos con
 las puntas hacia abajo en la cesta para cubiertos, en el soporte
 para cuchillos o en el cajón para cubiertos.
@@ -442,9 +442,9 @@ No utilizar productos de limpieza abrasivos
 ni rascadores metálicos afilados para limpiar
 el cristal de la puerta del horno, ya que pue-
 den rayar la superficie.";['Lavavajillas.pdf', 'Frigorifico.pdf', 'Lavavajillas.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Qué puede ocurrir si se dañan las tuberías del circuito de refrigeración? ;es;"Si las tuberías del circuito de refrigeración se dañan, puede producirse una fuga de líquido refrigerante inflamable y gases nocivos. Esta fuga puede provocar un incendio o, en el peor de los casos, una explosión, además de exponer a las personas a sustancias tóxicas.
+gpt-oss:20b-cloud;¿Qué puede ocurrir si se dañan las tuberías del circuito de refrigeración? ;es;"Si las tuberías del circuito de refrigeración se dañan, puede producirse una fuga de líquido refrigerante inflamable y gases nocivos, lo que puede provocar un incendio o incluso una explosión.
 
-_¿Te gustaría saber ¿te gustaría saber cómo detectar una fuga en las tuberías de refrigeración??_";1.0;3.99;"su vida.
+_¿qué medidas puedo tomar para evitar que se dañen las tuberías del circuito de refrigeración?_";1.0;6.42;"su vida.
 No retirar las bandejas y recipien-
 tes del aparato a fin de dificultar
 que los niños pueden acceder al
@@ -528,9 +528,9 @@ No guardar productos que contengan gases propelentes o in-
 flamables ni materias explosivas en el aparato.
 ADVERTENCIA ‒ ¡Riesgo de incendio!
 Los dispositivos eléctricos en el interior del aparato pueden pro-";['Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf']
-gpt-oss:20b-cloud;¿Se deben guardar botellas con líquidos gaseosos en el congelador? ;es;"No, no debes guardar botellas, tarros o latas que contengan líquidos gaseosos en el congelador. El manual indica que estos recipientes pueden estallar y representar un riesgo de incendio o lesiones.
+gpt-oss:20b-cloud;¿Se deben guardar botellas con líquidos gaseosos en el congelador? ;es;"No, no debes guardar botellas, tarros ni latas que contengan líquidos gaseosos en el congelador. El manual indica que estos recipientes pueden estallar y representar un riesgo de incendio o lesiones.
 
-_¿Te gustaría saber ¿qué otras precauciones debo tener al usar el congelador??_";1.0;3.47;"flamables ni materias explosivas en el aparato.
+_¿qué otras precauciones debo tener al usar el congelador?_";1.0;5.1;"flamables ni materias explosivas en el aparato.
 ADVERTENCIA ‒ ¡Riesgo de incendio!
 Los dispositivos eléctricos en el interior del aparato pueden pro-
 vocar incendios (por ejemplo, calefactores, heladoras, etc.).
@@ -638,9 +638,9 @@ parar cubitos de hielo.
 de la bandeja para cubitos de hie-
 lo y colocarla en el congelador.
 Separar las bandejas para cubitos";['Frigorifico.pdf', 'Frigorifico.pdf', 'Lavavajillas.pdf', 'Frigorifico.pdf']
-gpt-oss:20b-cloud;¿Qué distancia mínima hay que mantener respecto a cocinas de gas o eléctricas? ;es;"No he encontrado esa información en los manuales.
+gpt-oss:20b-cloud;¿Qué distancia mínima hay que mantener respecto a cocinas de gas o eléctricas? ;es;"Para montar el lavavajillas debajo de una placa de cocción (gas o eléctrica) debes respetar la separación mínima requerida por el fabricante y asegurarte de que el aparato no entre en contacto con la conexión de gas de la placa. En la práctica, se recomienda una profundidad de encimera mínima de **600 mm** y, si es gas, que el lavavajillas quede a una distancia suficiente para que no toque la línea de gas. Si no estás seguro de la distancia exacta, lo más seguro es consultar a un especialista autorizado en instalación de gas.
 
-_¿Te gustaría saber ¿te gustaría saber cómo montar el aparato debajo de una placa de cocción??_";0.0;4.67;"trado.
+_¿te gustaría saber cómo medir correctamente esa distancia en tu cocina?_";1.0;13.25;"trado.
 Tener en cuenta las posibles instrucciones de monta-
 je de la placa de cocción.
 Tener en cuenta las diferentes indicaciones naciona-
@@ -724,7 +724,7 @@ fuego lento.
 Cortar siempre el papel de hornear a un ta-";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'Lavavajillas.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Cuál es la distancia mínima requerida respecto a hornos de carbón o aceite?;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber cómo mantener la distancia segura entre el horno y otras fuentes de calor??_";0.0;5.01;"Si el montante de puerta está
+_¿qué medidas de seguridad debo tomar al usar el horno?_";1.0;8.69;"Si el montante de puerta está
 abierto, esta debe cerrarse antes
 de cerrar la puerta del aparato.
 Al subirse o apoyarse sobre el apara-
@@ -823,9 +823,9 @@ almacenarse congelados durante
 mucho tiempo. Las bajas temperatu-
 ras ralentizan o detienen su deterio-
 ro.";['Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf', 'Frigorifico.pdf']
-gpt-oss:20b-cloud;¿Cuál es el volumen mínimo de la habitación por cada 8 g de líquido refrigerante?;es;"El volumen mínimo recomendado es **1 m³ por cada 8 g de líquido refrigerante**.
+gpt-oss:20b-cloud;¿Cuál es el volumen mínimo de la habitación por cada 8 g de líquido refrigerante?;es;"El volumen mínimo recomendado es de **1 m³ por cada 8 g de líquido refrigerante**.
 
-_¿Te gustaría saber ¿te gustaría saber cómo verificar la cantidad de refrigerante que tiene tu aparato??_";1.0;3.03;"Directorio de Servicios de Aten-
+_¿te gustaría saber cómo verificar la cantidad de refrigerante que tiene tu aparato?_";1.0;5.48;"Directorio de Servicios de Aten-
 ción al Cliente
 Documento de la garantía 2
 Etiqueta energética
@@ -929,7 +929,7 @@ El aparato puede volcar.
 No subirse ni apoyarse sobre los zócalos, cajones o puertas.";['Frigorifico.pdf', 'Frigorifico.pdf', 'Lavavajillas.pdf', 'Frigorifico.pdf']
 gpt-oss:20b-cloud;¿Cuál es el rango de temperatura ambiente para el que está diseñado el frigorífico?;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿quieres saber cuál es la temperatura mínima de funcionamiento del frigorífico??_";1.0;4.64;"temperatura interior del alimento en el panel indica-
+_¿qué debo hacer si la temperatura interior del frigorífico no alcanza el valor ajustado?_";1.0;6.32;"temperatura interior del alimento en el panel indica-
 dor y, en caso necesario, finalizar el funcionamiento
 manualmente.
 Modificar la temperatura
@@ -1021,7 +1021,7 @@ es Accesorios
 Accesorios6 Accesorios";['HornoEmpotrado.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Qué distancia mínima debe haber entre dos frigoríficos instalados uno al lado del otro?;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber cómo limpiar los filtros de los frigoríficos??_";0.0;4.57;"sentido horario.
+_¿te gustaría saber cuál es la distancia mínima de ventilación requerida para un solo frigorífico?_";1.0;34.47;"sentido horario.
 Asegurarse de que las marcas
 en forma de flecha estén una
 frente a otra.
@@ -1132,14 +1132,26 @@ en fábrica bajo condiciones de fun-
 cionamiento normal. Por ello, es po-";['Lavavajillas.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf', 'Lavavajillas.pdf']
 gpt-oss:20b-cloud;¿Qué se debe hacer antes de conectar el aparato por primera vez?;es;"Antes de enchufar el aparato por primera vez, debes:
 
-1. **Desembalar y revisar**: abre el paquete y comprueba que todas las piezas estén presentes y sin daños ocasionados durante el transporte.  
-2. **Verificar la instalación eléctrica**: asegúrate de que la toma de corriente esté puesta a tierra y que la instalación cumpla con las normas vigentes.  
-3. **Conectar a la fuente correcta**: conecta el aparato únicamente a una fuente de alimentación de corriente alterna mediante un enchufe reglamentario con puesta a tierra.  
-4. **Evitar dispositivos externos**: no alimentes el aparato a través de un reloj avisador, mando a distancia u otro dispositivo de conmutación externo.  
-5. **Accesibilidad del enchufe**: cuando el aparato esté montado, el enchufe del cable de conexión a la red debe quedar accesible; si no es posible, debe haberse instalado un dispositivo de separación.  
-6. **Conectar el suministro de agua** (si aplica): sigue las instrucciones de montaje para conectar correctamente el agua antes de poner en marcha el aparato.
+1. **Revisar el embalaje**  
+   - Asegúrate de que todas las piezas estén presentes y que no haya daños visibles causados durante el transporte.  
+   - Si encuentras algún desperfecto, contacta al comercio donde lo adquiriste o al Servicio de Asistencia Técnica de la marca.
 
-_¿Te gustaría saber ¿cómo conectar el suministro de agua al aparato??_";1.0;8.83;"Conectar y poner en funcionamiento el aparato solo de confor-
+2. **Leer la placa de características**  
+   - Verifica que la tensión, frecuencia y potencia indicadas coincidan con la fuente de alimentación disponible.
+
+3. **Conectar a la red eléctrica correcta**  
+   - Usa un enchufe reglamentario con puesta a tierra.  
+   - La instalación eléctrica doméstica debe estar conforme a las normas vigentes.  
+   - No alimentes el aparato mediante dispositivos de conmutación externos (relojes avisadores, mandos a distancia, etc.).
+
+4. **Garantizar la accesibilidad del enchufe**  
+   - Cuando el aparato esté montado, el enchufe del cable de conexión a la red debe quedar accesible.  
+   - Si no es posible, instala un dispositivo de separación de seguridad.
+
+5. **No encender el aparato hasta que todo esté correctamente conectado**  
+   - Una vez verificado lo anterior, puedes proceder a encenderlo siguiendo las instrucciones de puesta en marcha del manual.
+
+_¿cómo se activa el seguro para niños en el aparato?_";1.0;48.47;"Conectar y poner en funcionamiento el aparato solo de confor-
 midad con los datos que figuran en la placa de características
 del mismo.
 Conectar el aparato solo a una fuente de alimentación con co-
@@ -1223,103 +1235,112 @@ de apagarse con  .
 Cuando el aparato está encendido,  se ilumina.
 Cuando el aparato está apagado,  no se ilumina.
 17.2 Desactivar el seguro para niños";['Frigorifico.pdf', 'Frigorifico.pdf', 'Lavavajillas.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;"¿Qué indica el número ""1"" en la ilustración del aparato?";es;"No he encontrado esa información en los manuales.
+gpt-oss:20b-cloud;¿Qué elementos se deben utilizar para nivelar el aparato si hace ruido por desnivel?;es;"Para nivelar el aparato y eliminar el ruido causado por una posición desnivelada, utiliza un **nivel de burbuja** y ajusta las **patas atornilladas** del equipo. Coloca el nivel sobre la superficie donde está el aparato, verifica la alineación y gira las patas hasta que el nivel indique que está perfectamente horizontal.
 
-_¿Te gustaría saber ¿te gustaría saber cómo localizar la placa de características del aparato??_";1.0;6.56;"(E-Nr.), el número de fabricación (FD)
-52
-Datos técnicos es
-y el número de conteo (Z-Nr.) del
-aparato.
-En el documento adjunto sobre con-
-tactos de servicio y condiciones de
-garantía o en nuestra página web fi-
-guran los datos de contacto del ser-
-vicio al cliente mediante el código
-QR.
-20.1 Número de producto (E-
-Nr.), número de fabrica-
-ción (FD) y número de
-conteo (Z-Nr.)
-El número de producto (E-Nr.), el nú-
-mero de fabricación (FD) y el número
-de conteo (Z-Nr.) se encuentran en la
-placa de características del aparato.
-La placa de características se en-
-cuentra en la parte interior de la
-puerta del aparato.
- ""Familiarizándose con el aparato"",
-Página14
-Para volver a encontrar rápidamente
-los datos del aparato o el número de
-teléfono del Servicio de Asistencia
+_¿qué hacer si el aparato sigue haciendo ruido después de nivelarlo?_";1.0;23.48;"el fusible de la caja de fusibles.
+Llamar al Servicio de Atención al Cliente. 
+ Página29
+8
+Evitar daños materiales es
+Evitar daños materiales2 Evitar daños materiales
+ATENCIÓN
+Al desplazar el aparato, debido a su
+elevado peso o la inclinación de las
+ruedas del aparato, el piso puede re-
+sultar dañado.
+Transportar el aparato con una ca-
+rretilla de mano.
+Proteger el piso con algo cuando
+se vaya a desplazar el aparato y
+no moverlo en zigzag.
+Al cerrar la puerta del aparato, este
+puede resultar dañado si el montante
+de puerta está abierto.
+No debe abrirse el montante de
+puerta manualmente.
+Si el montante de puerta está
+abierto, esta debe cerrarse antes
+de cerrar la puerta del aparato.
+Al subirse o apoyarse sobre el apara-
+to, pedestales, cajones o puertas, se
+puede dañar el aparato.
 
-14.1 Corte en el suministro eléctri-
-co⁠ ⁠...............................................⁠ ⁠28
-14.2 Ejecutar la autocomproba-
-ción del aparato⁠ ⁠......................⁠ ⁠28
-15 Almacenamiento y elimina-
-ción⁠ ⁠........................................... ⁠ ⁠28
-15.1 Interrumpir el funcionamiento
-del aparato⁠ ⁠...............................⁠ ⁠28
-15.2 Eliminación del aparato usa-
-do⁠ ⁠...............................................⁠ ⁠29
-16 Servicio de Asistencia Técni-
-ca⁠ ⁠.............................................. ⁠ ⁠29
-16.1 Número de producto (E-Nr.)
-y número de fabricación
-(FD)⁠ ⁠ ...........................................⁠ ⁠30
-17 Datos técnicos⁠ ⁠ ........................ ⁠ ⁠30
-Seguridad
- 1 Seguridad
-Tenga en cuenta las siguientes indicaciones de seguridad.
+través de los tubos. El motor, los interruptores o las
+electroválvulas se conectan o desconectan. Se está re-
+alizando el desescarchado automático.
+No se requiere ninguna acción.
+El aparato hace rui-
+dos.
+El aparato está colocado en posición desnivelada.
+Nivelar el aparato con la ayuda de un nivel de bur-
+buja y de las patas atornilladas.
+El aparato no está libre.
+Mantener las distancias mínimas del aparato.
+Los elementos del aparato se tambalean o se quedan
+atascados.
+Comprobar los elementos extraíbles y, en caso ne-
+cesario, volver a introducirlos.
+Las botellas o recipientes entran en contacto.
+Separar las botellas o recipientes entre sí.
+Supercongelación está activada.
+No se requiere ninguna acción.
+27
+es Almacenamiento y eliminación
+14.1 Corte en el suministro
+eléctrico
 
-Cuando se ponga en contacto con el
-Servicio de Asistencia Técnica, no ol-
-vide indicar el número de producto
-(E-Nr.) y el número de fabricación
-(FD) del aparato.
-En el documento adjunto sobre con-
-tactos de servicio y condiciones de
-garantía o en nuestra página web fi-
-guran los datos de contacto del ser-
-vicio al cliente mediante el código
-QR.
-16.1 Número de producto (E-
-Nr.) y número de fabrica-
-ción (FD)
-El número de producto (E-Nr.) y el
-número de fabricación (FD) se en-
-cuentran en la placa de característi-
-cas del aparato.
- ""Aparato"", Fig. 1 /
-Página13
-Para volver a encontrar rápidamente
-los datos del aparato o el número de
-teléfono del Servicio de Asistencia
-Técnica, puede anotar dichos datos.
-Datos técnicos17 Datos técnicos
-En la placa de características del
+22
+Cuidados y limpieza es
+podría producir su deformación o de-
+coloración.
+No lavar nunca los elementos y
+accesorios del aparato en el lava-
+vajillas.
+1. Preparar el aparato para su limpie-
+za. 
+ Página22
+2. Limpiar el exterior y el interior del
+aparato, los elementos adiciona-
+les, los accesorios y las juntas de
+la puerta con una bayeta, agua
+templada y un poco de jabón de
+pH neutro.
+3. Secar completamente con un paño
+suave y seco.
+4. Colocar los accesorios y montar
+las piezas desmontables del apa-
+rato.
+5. Conexión del aparato a la red
+eléctrica. 
+ Página11
+6. Introducir alimentos:
+13.3 Retirar elementos del apa-
+rato
+Si se desea limpiar a fondo los ele-
+mentos del aparato, es necesario re-
+tirarlos.
+Retirar las bandejas
+Tirar de la bandeja por la parte de-
 
-placa de características del aparato.
-La placa de características con los correspondientes
-números se encuentra al abrir la puerta del aparato. En
-41
-es Informaciones referentes al software libre y de código abierto
-algunos aparatos equipados con una función de vapor,
-la placa de características se encuentra detrás de la
-moldura.
-Para volver a encontrar rápidamente los datos del apa-
-rato o el número de teléfono del Servicio de Asistencia
-Técnica, puede anotar dichos datos.
-También puede mostrar la información del aparato en
-los ajustes básicos.
- ""Ajustes básicos"", Página26
-Informaciones referentes al software libre y de código abierto30 Informaciones referentes al software libre y de código
-abierto
-El presente producto contiene componentes de softwa-";['Lavavajillas.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Qué botón permite ajustar la temperatura del compartimento frigorífico?;es;"El botón que permite ajustar la temperatura del compartimento frigorífico es el **botón “mode”** (o “Modos de calentamiento” en el menú). Pulsándolo varias veces se accede a la opción de ajuste de temperatura y se puede activar la función Superfrío.
+Los cuchillos y utensilios cortantes pueden causar lesiones.
+Colocar los cuchillos y utensilios cortantes o puntiagudos con
+las puntas hacia abajo en la cesta para cubiertos, en el soporte
+para cuchillos o en el cajón para cubiertos.
+ADVERTENCIA ‒ ¡Riesgo de quemaduras!
+Al abrir la puerta del aparato durante el desarrollo del programa
+puede salpicar agua caliente del aparato.
+Abrir la puerta del aparato con cuidado durante el desarrollo de
+un programa de lavado.
+ADVERTENCIA ‒ ¡Riesgo de descarga eléctrica!
+La infiltración de humedad puede provocar una descarga eléctri-
+ca.
+Utilizar el aparato solo en espacios interiores.
+No exponer el aparato a altas temperaturas y humedad.
+No utilizar limpiadores por chorro de vapor ni de alta presión
+para limpiar el aparato.";['Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'Lavavajillas.pdf']
+gpt-oss:20b-cloud;¿Qué botón permite ajustar la temperatura del compartimento frigorífico?;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber cómo activar o desactivar la función superfrío??_";1.0;4.92;"compartimento frigorífico se enfría
+_¿cómo se activa la función superfrío?_";1.0;42.8;"compartimento frigorífico se enfría
 hasta alcanzar la temperatura más
 baja posible.
 Encender Superfrío antes de almace-
@@ -1417,9 +1438,9 @@ En la pantalla se muestran los valores de ajuste y el
 tiempo transcurrido de funcionamiento.
 Cuando se alcanza la temperatura interior programa-
 da, suena una señal. En la pantalla se indica que el";['Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;"¿Qué función se activa cuando se ilumina ""super cool""?";es;"La luz “super cool” indica que la función **Superfrío (Supercool)** está activada, lo que enfría el compartimento frigorífico a la temperatura más baja posible.
+gpt-oss:20b-cloud;"¿Qué función se activa cuando se ilumina ""super cool""?";es;"La luz “super cool” indica que está activada la función **Superfrío** (modo de enfriamiento rápido del compartimento frigorífico).
 
-_¿Te gustaría saber ¿quieres saber cómo activar o desactivar la función superfrío??_";1.0;4.03;"que ""super cool"" se apague.
+_¿te gustaría saber cómo activar o desactivar la función superfrío?_";1.0;4.61;"que ""super cool"" se apague.
 Muestra la temperatura ajustada
 anteriormente.
 8.2 Supercongelación
@@ -1533,9 +1554,9 @@ puede retirarse la bandeja y recolo-
 carse en otro lugar.
  ""Retirar las bandejas"", Página23
 14";['Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf']
-gpt-oss:20b-cloud;"¿Qué indica el símbolo ""lock"" en el panel de mando?";es;"El símbolo “lock” en el panel de mando indica que el modo de bloqueo está activado. Cuando el icono aparece en color (por ejemplo, rojo o azul) significa que el dispositivo está bloqueado y no se pueden modificar los ajustes ni iniciar programas. Si el icono se vuelve blanco, el bloqueo se ha desactivado y el panel vuelve a estar disponible para su uso.
+gpt-oss:20b-cloud;"¿Qué indica el símbolo ""lock"" en el panel de mando?";es;"El símbolo “lock” en el panel de mando indica que el modo de bloqueo (por lo general, el bloqueo infantil o de seguridad) está activado. Cuando aparece, el aparato no puede iniciar ni cambiar de función hasta que se desactive el bloqueo.
 
-_¿Te gustaría saber ¿te gustaría saber cómo activar o desactivar el bloqueo en tu modelo??_";1.0;6.25;"ñal. El símbolo  se vuelve blanco de nuevo.
+_¿te gustaría saber cómo activar o desactivar el bloqueo en tu modelo?_";1.0;41.43;"ñal. El símbolo  se vuelve blanco de nuevo.
 4. Introducir el alimento en el compartimento de coc-
 ción.
 Interrumpir el calentamiento rápido
@@ -1621,9 +1642,9 @@ se del mismo.
 Seguridad es
 No deje que los niños jueguen con el aparato.
 La limpieza y el cuidado del aparato a cargo";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿A qué temperatura se recomienda ajustar el compartimento frigorífico para que el cajón 0°C funcione bien?;es;"Para que el cajón de almacenamiento alcance aproximadamente 0 °C, debes ajustar la temperatura del compartimento frigorífico a **2 °C**.
+gpt-oss:20b-cloud;¿A qué temperatura se recomienda ajustar el compartimento frigorífico para que el cajón 0°C funcione bien?;es;"Para que el cajón de almacenamiento alcance temperaturas cercanas a 0 °C, debes ajustar la temperatura del compartimento frigorífico a **2 °C**.
 
-_¿Te gustaría saber ¿te gustaría saber cómo activar la función supercongelación para enfriar aún más el congelador??_";1.0;4.79;"de del modelo.
+_¿te gustaría saber cómo activar la función supercongelación para enfriar aún más el congelador?_";1.0;6.87;"de del modelo.
 6.1 Bandeja
 Si se desea modificar la posición de
 las bandejas según sea necesario,
@@ -1722,9 +1743,9 @@ anteriormente.
 Con la función Supercongelación, el
 congelador enfría a la temperatura
 más baja posible.";['Frigorifico.pdf', 'HornoEmpotrado.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf']
-gpt-oss:20b-cloud;¿Hacia dónde se debe deslizar el regulador para guardar fruta en el cajón de verduras?;es;"Se debe deslizar el regulador hacia la izquierda para guardar fruta en el cajón de verduras.
+gpt-oss:20b-cloud;¿Hacia dónde se debe deslizar el regulador para guardar fruta en el cajón de verduras?;es;"Desliza el regulador de humedad hacia la izquierda para guardar fruta en el cajón de verduras.
 
-_¿Te gustaría saber ¿quieres saber cómo ajustar la humedad para otros tipos de alimentos??_";1.0;4.67;"recipiente de almacenamiento se uti-
+_¿quieres saber cómo ajustar la humedad para verduras?_";1.0;30.97;"recipiente de almacenamiento se uti-
 liza para guardar alimentos perece-
 deros (por ejemplo, pescado, carne y
 embutido).
@@ -1831,7 +1852,7 @@ tos congelados
 lación hasta el tope.";['Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf']
 gpt-oss:20b-cloud;¿Qué temperatura ambiente se recomienda para conservar frutas sensibles al frío fuera de la nevera?;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber cómo ajustar la temperatura del compartimento frigorífico para conservar frutas??_";0.0;4.55;"temperatura interior del alimento en el panel indica-
+_¿te gustaría saber cómo almacenar frutas sensibles al frío dentro de la nevera?_";0.0;6.19;"temperatura interior del alimento en el panel indica-
 dor y, en caso necesario, finalizar el funcionamiento
 manualmente.
 Modificar la temperatura
@@ -1929,9 +1950,10 @@ los 60 °C. el anillo se apaga por completo.
 11
 es Accesorios
 Accesorios6 Accesorios";['HornoEmpotrado.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Se pueden lavar los accesorios del aparato en el lavavajillas?;es;"No he encontrado esa información en los manuales.
+gpt-oss:20b-cloud;¿Se pueden lavar los accesorios del aparato en el lavavajillas?;es;"Sí, los accesorios esmaltados del lavavajillas pueden lavarse en el propio aparato.  
+Para otros accesorios que no sean esmaltados, el manual no los recomienda colocar en el lavavajillas, ya que podrían dañarse o no limpiarse adecuadamente.
 
-_¿Te gustaría saber ¿te gustaría saber cómo limpiar correctamente los accesorios sin usar el lavavajillas??_";1.0;5.21;"Retirar la cristalería y los cubiertos del
+_¿te gustaría saber cómo cargar la vajilla para optimizar el lavado?_";1.0;9.04;"Retirar la cristalería y los cubiertos del
 aparato poco después de finalizar el
 programa.
 13.2 Introducir la vajilla
@@ -2030,9 +2052,9 @@ Cuando el programa ha finalizado,
 se apaga el indicador de Limpieza
 de la máquina.
 17.5 Sistema de filtros";['Lavavajillas.pdf', 'HornoEmpotrado.pdf', 'Lavavajillas.pdf', 'Lavavajillas.pdf']
-gpt-oss:20b-cloud;¿Qué tipo de agua se debe usar para preparar cubitos de hielo?;es;"Debes usar agua potable para preparar cubitos de hielo.
+gpt-oss:20b-cloud;¿Qué tipo de agua se debe usar para preparar cubitos de hielo?;es;"Se debe usar **agua potable** para preparar cubitos de hielo.
 
-_¿Te gustaría saber ¿te gustaría saber cómo separar las bandejas de cubitos de hielo??_";1.0;2.91;"Utilizar solo agua potable para pre-
+_¿cómo se separan las bandejas de cubitos de hielo?_";1.0;21.12;"Utilizar solo agua potable para pre-
 parar cubitos de hielo.
 1. Llenar con agua potable ¾ partes
 de la bandeja para cubitos de hie-
@@ -2142,17 +2164,17 @@ rior hacia arriba.
 3. Comprobar si hay obstrucciones
 en las boquillas de salida de los
 brazos de aspersión bajo el chorro";['Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'Lavavajillas.pdf']
-gpt-oss:20b-cloud;¿Por qué parpadea la indicación de temperatura al conectar el aparato por primera vez?;es;"El parpadeo de la indicación de temperatura suele aparecer cuando el sistema electrónico del aparato detecta un fallo durante el arranque inicial. En ese caso, la pantalla muestra “E” o “d” y el indicador de temperatura parpadea para alertarte de que algo no está funcionando correctamente.  
+gpt-oss:20b-cloud;¿Por qué parpadea la indicación de temperatura al conectar el aparato por primera vez?;es;"El parpadeo de la indicación de temperatura al conectar el aparato por primera vez suele ser un signo de que el sistema está inicializando y calibrando sus sensores de temperatura. Durante este proceso el display puede alternar entre valores mientras el sensor se estabiliza y el microcontrolador verifica que la lectura sea correcta. Una vez que la medición se ha estabilizado, el parpadeo cesa y la temperatura se muestra de forma continua.
 
-Para resolverlo, sigue los pasos recomendados en el manual:
+En caso de que el parpadeo persista más allá de unos segundos, el manual indica que el sistema electrónico ha detectado un fallo. En ese caso se recomienda:
 
-1. Apaga el aparato.  
-2. Desconecta el aparato de la red eléctrica (extrae el enchufe o desconecta el fusible).  
-3. Espera unos 5 minutos y vuelve a conectar el aparato.  
+1. Apagar el aparato.  
+2. Desconectar el aparato de la red eléctrica (extraer el enchufe o desconectar el fusible).  
+3. Volver a conectar el aparato tras 5 minutos.
 
-Después de reconectar, el sistema debería reiniciarse y la indicación de temperatura dejará de parpadear.
+Si el problema continúa, puede ser necesario revisar el sensor de temperatura o contactar con el servicio técnico.
 
-_¿Te gustaría saber ¿te gustaría saber cómo interpretar los códigos de error “e” y “d” que aparecen en la pantalla??_";1.0;7.33;"es posible visualizar en la pantalla la temperatura actual
+_¿te gustaría saber cómo calibrar la temperatura del horno o cómo solucionar un fallo de temperatura?_";1.0;53.18;"es posible visualizar en la pantalla la temperatura actual
 del compartimento de cocción a partir de 30 °C aprox.
 y la temperatura ajustada, una encima de la otra.
 Al precalentar, el punto óptimo para introducir los ali-
@@ -2250,7 +2272,7 @@ desconectar el fusible de la caja de fusibles.
 3. Volver a conectar el aparato tras 5 minutos.";['HornoEmpotrado.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf']
 gpt-oss:20b-cloud;¿Por qué se calientan los laterales del aparato?;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿qué precauciones debo tomar si los laterales del aparato se calientan??_";0.0;3.87;"Eliminar completamente cualquier residuo del com-
+_¿te gustaría saber cómo evitar que el aparato se caliente demasiado durante su uso?_";0.0;26.32;"Eliminar completamente cualquier residuo del com-
 partimento de cocción y de la puerta del aparato an-
 tes de volver a encenderlo.
 Si la junta presenta mucha suciedad, la puerta del apa-
@@ -2350,7 +2372,7 @@ panel posterior no deben ser accesibles a los
 niños, ni siquiera a través de los cajones y ar-";['HornoEmpotrado.pdf', 'Lavavajillas.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Cuál es la temperatura recomendada para el compartimento frigorífico?;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿quieres saber cómo activar la función superfrío??_";0.0;4.08;"compartimento frigorífico se enfría
+_¿te gustaría saber cómo activar la función superfrío?_";0.0;59.25;"compartimento frigorífico se enfría
 hasta alcanzar la temperatura más
 baja posible.
 Encender Superfrío antes de almace-
@@ -2442,7 +2464,7 @@ es Accesorios
 Accesorios6 Accesorios";['Frigorifico.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Cuál es la temperatura recomendada para el congelador?;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿cómo ajusto la temperatura del compartimento de cocción??_";0.0;4.94;"mento en cuestión puede encontrarse en la descripción
+_¿quieres saber cómo ajustar la temperatura de cocción?_";0.0;24.51;"mento en cuestión puede encontrarse en la descripción
 de los modos de calentamiento.
  ""Modos de calentamiento"", Página10
 Modificar el modo de calentamiento
@@ -2543,7 +2565,7 @@ Cuando se alcanza la temperatura interior programa-
 da, suena una señal. En la pantalla se indica que el";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Cómo se activa el bloqueo de teclas?;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿quieres saber cómo ajustar la duración de cocción??_";0.0;3.34;"da.
+_¿cómo se ajusta el nivel de limpieza?_";1.0;7.65;"da.
 Nota: Si se quiere dar la vuelta a los ali-
 mentos, colocar la termosonda lateralmen-
 te en el alimento para que no haya que re-
@@ -2645,7 +2667,7 @@ productos y evitar que se quemen
 por congelación.";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'Frigorifico.pdf']
 gpt-oss:20b-cloud;¿Cuánto tiempo tarda en desactivarse automáticamente la función Superfrío?;es;"La función Supercongelación (Superfrío) se desactiva automáticamente después de aproximadamente 54 horas.
 
-_¿Te gustaría saber ¿te gustaría saber cómo activar o desactivar manualmente la función supercongelación??_";1.0;3.25;"con el programa de prelavado me-
+_¿te gustaría saber cómo activar o desactivar manualmente la función supercongelación?_";1.0;2.92;"con el programa de prelavado me-
 morizado en esta tecla. El programa
 de prelavado es apto para todo tipo
 de vajilla. Mediante el aclarado en
@@ -2751,7 +2773,7 @@ namiento deberá finalizar. El horno se
 inicia automáticamente para que el";['Lavavajillas.pdf', 'Frigorifico.pdf', 'Lavavajillas.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Con cuánta antelación se debe encender la Supercongelación para más de 2 kg de alimentos?;es;"Debes encender la función Supercongelación **entre 1 y 2 horas antes** de colocar en el congelador una cantidad de alimentos de 2 kg o más.
 
-_¿Te gustaría saber ¿te gustaría saber cómo activar la función supercongelación en tu modelo específico??_";1.0;3.94;"que ""super cool"" se apague.
+_¿te gustaría saber cómo activar la función supercongelación en tu modelo específico?_";1.0;11.57;"que ""super cool"" se apague.
 Muestra la temperatura ajustada
 anteriormente.
 8.2 Supercongelación
@@ -2867,9 +2889,9 @@ Llene con abrillantador el depósito del abri-
 llantador.
  ""Instalación del abrillantador"", Página27
 5.2 Elementos de mando";['Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf', 'Lavavajillas.pdf']
-gpt-oss:20b-cloud;¿Cuánto tiempo tarda en desactivarse automáticamente la función Supercongelación?;es;"La función Supercongelación se desactiva automáticamente después de aproximadamente **54 horas**.
+gpt-oss:20b-cloud;¿Cuánto tiempo tarda en desactivarse automáticamente la función Supercongelación?;es;"La función Supercongelación se desactiva automáticamente después de aproximadamente **54 horas** de uso.
 
-_¿Te gustaría saber ¿te gustaría saber cómo activar o desactivar manualmente la función supercongelación??_";1.0;3.62;"que ""super cool"" se apague.
+_¿te gustaría saber cómo activar o desactivar manualmente la función supercongelación?_";1.0;5.24;"que ""super cool"" se apague.
 Muestra la temperatura ajustada
 anteriormente.
 8.2 Supercongelación
@@ -2986,7 +3008,7 @@ compartimento de cocción
 Introducir los accesorios correctamente en el comparti-";['Frigorifico.pdf', 'Lavavajillas.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;"¿A qué temperatura se ajusta el frigorífico en modo ""eco""?";es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿quieres saber cómo activar el modo eco??_";0.0;3.48;"temperatura interior del alimento en el panel indica-
+_¿te gustaría saber cómo activar el modo eco en tu frigorífico?_";1.0;5.95;"temperatura interior del alimento en el panel indica-
 dor y, en caso necesario, finalizar el funcionamiento
 manualmente.
 Modificar la temperatura
@@ -3087,7 +3109,7 @@ electroválvulas se conectan o desconectan. Se está re-
 alizando el desescarchado automático.";['HornoEmpotrado.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf', 'Frigorifico.pdf']
 gpt-oss:20b-cloud;"¿A qué temperatura se ajusta el congelador en modo ""eco""?";es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber cómo ajustar la temperatura del congelador en otro modo??_";1.0;4.5;"temperatura interior del alimento en el panel indica-
+_¿te gustaría saber cómo ajustar la temperatura del compartimento de cocción?_";1.0;6.19;"temperatura interior del alimento en el panel indica-
 dor y, en caso necesario, finalizar el funcionamiento
 manualmente.
 Modificar la temperatura
@@ -3181,7 +3203,7 @@ es Termosonda
 con el anillo de ajuste.";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Qué funciones se desconectan durante el modo Sabbat?;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿quieres saber cómo ajustar la duración en el modo sabbat??_";0.0;7.87;"También se puede interrumpir el funcionamiento para
+_¿cómo se activa el modo sabbat?_";1.0;7.6;"También se puede interrumpir el funcionamiento para
 que continúe después.
 1. Para interrumpir el funcionamiento, pulsar 
 .
@@ -3269,7 +3291,7 @@ la pantalla.
 Modos de funcionamiento es";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Cuánto tiempo dura activado el modo Sabbat antes de desactivarse solo?;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿quieres saber cómo activar el modo sabbat??_";0.0;6.48;"«Act.».
+_¿te gustaría saber cómo activar el modo sabbat?_";1.0;23.71;"«Act.».
 Cambiar el ajuste básico «Tono de aviso» a «Muy
 corta duración».
 De esta forma, la iluminación del compartimento de
@@ -3366,9 +3388,9 @@ Durante la descalcificación se ha interrumpido el suministro eléctrico o se ha
 desconectado el aparato.
 Limpiar el aparato.
  ""Descalcificar"", Página33";['HornoEmpotrado.pdf', 'Lavavajillas.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Cómo se apaga la alarma de la puerta?;es;"Para apagar la alarma de la puerta, simplemente cierra la puerta del aparato o pulsa cualquier campo táctil del panel de mando. Al hacerlo, la señal acústica se apagará y el indicador “alarm” dejará de parpadear.
+gpt-oss:20b-cloud;¿Cómo se apaga la alarma de la puerta?;es;"Para apagar la alarma de la puerta basta con cerrar la puerta del aparato o pulsar cualquier campo táctil del panel de mando. Al hacerlo, la señal acústica se apaga y el indicador “alarm” deja de parpadear.
 
-_¿Te gustaría saber ¿te gustaría saber cómo activar o desactivar el seguro para niños??_";1.0;4.33;"2. Desconectar el aparato de la red eléctrica.
+_¿quieres saber cómo activar el modo sabbat?_";1.0;15.34;"2. Desconectar el aparato de la red eléctrica.
 Extraer el enchufe del cable de conexión de red o
 desconectar el fusible de la caja de fusibles.
 3. Volver a conectar el aparato tras 5 minutos.
@@ -3481,18 +3503,14 @@ agua de condensación.
 Al cerrar la puerta, asegurarse de
 que no esté bloqueada por obje-
 tos almacenados.";['Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf', 'Frigorifico.pdf']
-gpt-oss:20b-cloud;¿Qué se debe hacer con los alimentos si se activa la alarma de temperatura por fallo?;es;"Si la alarma de temperatura se activa por un fallo (es decir, la temperatura del congelador se ha elevado demasiado), debes:
+gpt-oss:20b-cloud;¿Qué se debe hacer con los alimentos si se activa la alarma de temperatura por fallo?;es;"Si la alarma de temperatura se activa por un fallo (temperatura demasiado alta), los alimentos que hayan empezado a descongelarse deben tratarse con precaución:
 
-1. **Detener el proceso de descongelación**: Cierra la puerta del aparato y, si es necesario, apaga el electrodoméstico para evitar que la temperatura siga subiendo.
-2. **Revisar el estado de los alimentos**:  
-   - Si los alimentos han empezado a descongelarse o ya están parcialmente descongelados, **no los vuelvas a congelar**.  
-   - Solo puedes volver a congelar esos alimentos si los has cocinado previamente (en sartén, horno, etc.).  
-3. **No conservar los alimentos más allá de su fecha máxima de conservación**: Si la temperatura ha sido demasiado alta por un tiempo prolongado, es más seguro desecharlos o, si están en buen estado, cocinarlos antes de consumirlos.
-4. **Investigar la causa de la alarma**: Verifica que las aberturas de ventilación exteriores no estén obstruidas, que no se hayan introducido grandes cantidades de alimentos sin activar la supercongelación, y que la puerta esté bien cerrada.
+1. **No volver a congelar** los alimentos que se hayan descongelado o que estén parcialmente descongelados.  
+2. **Solo pueden volver a congelarse** si se han cocinado previamente (en sartén, horno, etc.).  
+3. Si no se han cocinado, lo más seguro es **descartar** esos alimentos o consumirlos antes de su fecha máxima de conservación.  
+4. Mientras tanto, revisa la causa de la alarma (puede ser una puerta mal cerrada, obstrucción de ventilación, exceso de carga, etc.) y corrígela antes de volver a usar el aparato.
 
-En resumen, si la alarma se activa por un fallo de temperatura, no vuelvas a congelar alimentos que hayan descongelado; cocínalos antes de volver a congelarlos o, si no están seguros, deséchalos. Además, revisa y corrige la causa del fallo antes de volver a usar el aparato.
-
-_¿Te gustaría saber ¿te gustaría saber cómo desactivar la alarma de temperatura o cómo ajustar la temperatura del congelador??_";1.0;7.68;"por completo.
+_¿quieres saber cómo activar la supercongelación antes de introducir una gran cantidad de alimentos?_";1.0;8.9;"por completo.
 Desactivar la alarma de tempera-
 tura
 Pulsar cualquier campo táctil.
@@ -3608,7 +3626,7 @@ No guardar el alimento hasta su
 fecha máxima de conservación.";['Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf']
 gpt-oss:20b-cloud;¿Cuál es la zona más fría del compartimento frigorífico?;es;"La zona más fría del compartimento frigorífico es la del recipiente de almacenamiento.
 
-_¿Te gustaría saber ¿te gustaría saber cómo ubicar los alimentos perecederos en esa zona??_";1.0;3.58;"tacto directo con el panel posterior
+_¿quieres saber en qué zona deberías colocar los alimentos perecederos?_";1.0;14.34;"tacto directo con el panel posterior
 para no perjudicar la circulación
 de aire y evitar que se congelen
 los alimentos.
@@ -3710,7 +3728,7 @@ fría en una sartén.
 Marcar en primer lugar el lado";['Frigorifico.pdf', 'HornoEmpotrado.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Dónde se encuentra la zona menos fría del frigorífico?;es;"La zona menos fría del frigorífico se localiza en la parte superior de la contrapuerta.
 
-_¿Te gustaría saber ¿te gustaría saber cómo organizar los alimentos en las distintas zonas de frío??_";1.0;3.88;"tacto directo con el panel posterior
+_¿te gustaría saber cómo organizar los alimentos en la zona más fría?_";1.0;21.15;"tacto directo con el panel posterior
 para no perjudicar la circulación
 de aire y evitar que se congelen
 los alimentos.
@@ -3809,7 +3827,7 @@ productos y evitar que se quemen
 por congelación.";['Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf']
 gpt-oss:20b-cloud;¿Cuál es el rango de ajuste de temperatura del congelador?;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber cómo cambiar la configuración del modo de congelación??_";0.0;3.81;"temperatura interior del alimento en el panel indica-
+_¿te gustaría saber el rango de temperatura para el refrigerador?_";1.0;18.56;"temperatura interior del alimento en el panel indica-
 dor y, en caso necesario, finalizar el funcionamiento
 manualmente.
 Modificar la temperatura
@@ -3910,15 +3928,15 @@ Página16
 –";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Qué se debe hacer para aprovechar al máximo el volumen del congelador?;es;"Para aprovechar al máximo el volumen del congelador, sigue estos pasos:
 
-1. **Retira todos los elementos y accesorios** que estén dentro del congelador.  
-2. **Apila los alimentos directamente sobre el piso** del congelador, sin dejar espacios vacíos.  
-3. **Almacena los productos en envases herméticos** para evitar que se quemen por congelación y para mantener la calidad.  
-4. **Evita que los alimentos congelados entren en contacto con alimentos frescos** que desees descongelar.  
-5. **Distribuye los alimentos de manera uniforme** dentro de los recipientes para maximizar el espacio disponible.  
+1. **Vacía el congelador**: extrae todos los elementos y accesorios para tener espacio libre.  
+2. **Apila los alimentos directamente sobre el piso**: coloca los productos en capas sin dejar espacios vacíos entre ellos.  
+3. **Usa envases herméticos**: conserva los alimentos en recipientes sellados para evitar que se quemen por congelación y para que ocupen menos espacio.  
+4. **Evita el contacto entre alimentos frescos y congelados**: no dejes que se toquen, ya que puede provocar descongelación parcial.  
+5. **Distribuye los alimentos de manera uniforme**: asegúrate de que el aire frío circule bien alrededor de cada paquete.
 
-Estos consejos te ayudarán a usar el espacio de manera eficiente y a conservar mejor los alimentos.
+Con estos cuidados, maximizarás la capacidad de tu congelador y mantendrás la calidad de los alimentos.
 
-_¿Te gustaría saber ¿te gustaría saber cómo organizar los alimentos por tipo dentro del congelador??_";1.0;4.46;"También se puede interrumpir el funcionamiento para
+_¿te gustaría saber cómo organizar los alimentos por tipo o por fecha de congelación?_";1.0;4.9;"También se puede interrumpir el funcionamiento para
 que continúe después.
 1. Para interrumpir el funcionamiento, pulsar 
 .
@@ -4030,7 +4048,7 @@ gpt-oss:20b-cloud;¿Qué alimentos no son apropiados para congelar?;es;"Los alim
 - Nata agria o fresca  
 - Mayonesa
 
-_¿Te gustaría saber ¿cómo debo preparar la fruta antes de congelarla??_";1.0;4.99;"Lavar la fruta, retirar los huesos y,
+_¿cómo debo preparar la fruta antes de congelarla?_";0.0;18.04;"Lavar la fruta, retirar los huesos y,
 si así se desea, pelarla antes de
 congelarla; dado el caso, se le
 puede añadir azúcar o una solu-
@@ -4142,7 +4160,7 @@ ción de ácido ascórbico.
 Algunos alimentos apropiados pa-";['Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf', 'Frigorifico.pdf']
 gpt-oss:20b-cloud;¿Cuál es el tiempo de conservación del pescado congelado a -18°C?;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber la capacidad de congelación del aparato??_";0.0;4.22;"es posible visualizar en la pantalla la temperatura actual
+_¿te gustaría saber cómo activar la supercongelación en el aparato?_";0.0;7.58;"es posible visualizar en la pantalla la temperatura actual
 del compartimento de cocción a partir de 30 °C aprox.
 y la temperatura ajustada, una encima de la otra.
 Al precalentar, el punto óptimo para introducir los ali-
@@ -4241,9 +4259,9 @@ Regenerar
 Utilizar la termosonda suministrada o pedir a nuestro
 Servicio de Atención al Cliente una que sea adecuada.
 ADVERTENCIA ‒ ¡Riesgo de descarga eléctrica!";['HornoEmpotrado.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Es necesario desescarchar manualmente el congelador?;es;"No es necesario desescarchar manualmente el congelador; el aparato está diseñado para evitar la acumulación de escarcha, por lo que no requiere un proceso de desescarchado manual.
+gpt-oss:20b-cloud;¿Es necesario desescarchar manualmente el congelador?;es;"No es necesario desescarchar manualmente el congelador, ya que el manual indica que no se produce acumulación de escarcha y, por tanto, no se requiere un desescarchado.
 
-_¿Te gustaría saber ¿te gustaría saber cómo limpiar el interior del congelador si aparece alguna suciedad??_";1.0;4.09;"carcha en el congelador. Por tanto,
+_¿te gustaría saber cómo limpiar los lugares de difícil acceso del congelador?_";1.0;7.5;"carcha en el congelador. Por tanto,
 no es necesario un desescarchado.
 Cuidados y limpieza13 Cuidados y limpieza
 Para que el aparato mantenga duran-
@@ -4335,7 +4353,7 @@ los ajustes básicos.
 Nota: Si se abre la puerta del aparato durante el funcio-";['Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Qué producto se recomienda para limpiar las juntas de la puerta?;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber cómo limpiar el interior del horno??_";0.0;4.2;"8. ATENCIÓN ‒ Limpiar los cristales en el lavavajillas
+_¿te gustaría saber cómo limpiar la puerta del aparato?_";0.0;7.11;"8. ATENCIÓN ‒ Limpiar los cristales en el lavavajillas
 puede dañarlos.
 No lavar los cristales en el lavavajillas.
 Extraer el primer y segundo cristal intermedio tirando
@@ -4422,12 +4440,15 @@ cocción y de las rejillas.
 La suciedad gruesa puede incrustarse y dificultar su
 eliminación.
 4. Limpiar la puerta del aparato y los bordes del com-";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Cómo se retira el cajón para fruta y verdura?;es;"Para retirar el cajón de fruta y verdura sigue estos pasos:
+gpt-oss:20b-cloud;¿Cómo se retira el cajón para fruta y verdura?;es;"Para retirar el cajón de frutas y verduras sigue estos pasos:
 
-1. **Saca el cajón hasta el tope**: empuja el cajón hacia afuera hasta que llegue al extremo máximo.  
-2. **Levanta el cajón por delante**: una vez que esté en posición, levanta el cajón ligeramente desde la parte delantera y retíralo completamente del aparato.
+1. **Saca el cajón hasta el tope**: Desliza el cajón hacia afuera hasta que llegue al extremo máximo de la apertura.  
+2. **Levanta el cajón**: Una vez que esté en posición, levanta el cajón ligeramente por la parte delantera.  
+3. **Retíralo**: Sostén el cajón con firmeza y sácalo completamente del aparato.  
 
-_¿Te gustaría saber ¿quieres saber cómo ajustar la humedad del cajón para fruta y verdura??_";1.0;4.85;"frutas y verduras
+Si el cajón tiene una tapa, primero levanta ligeramente la tapa, tira de ella hacia adelante y luego retira el cajón como se indica arriba.
+
+_¿quieres saber cómo ajustar la humedad en el cajón de frutas y verduras?_";1.0;10.76;"frutas y verduras
 1. Extraer el cajón para frutas y ver-
 duras hasta el tope.
 2. Levantar ligeramente la tapa del
@@ -4532,9 +4553,9 @@ Retirar el recipiente para produc-
 tos congelados
 1. Sacar el compartimento de conge-
 lación hasta el tope.";['Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf']
-gpt-oss:20b-cloud;"¿Qué significa si aparece ""E"" o ""d"" en la pantalla de temperatura?";es;"La aparición de “E” o “d” en la pantalla de temperatura indica que el sistema electrónico ha detectado un fallo. En ese caso, el aparato suele requerir que lo apagues, lo desconectes de la red eléctrica, esperes unos minutos y luego lo vuelvas a encender.
+gpt-oss:20b-cloud;"¿Qué significa si aparece ""E"" o ""d"" en la pantalla de temperatura?";es;"En la pantalla de temperatura aparecer “E” o “d” indica que el sistema electrónico ha detectado un fallo. Es un código de error que señala que algo no está funcionando correctamente y que el aparato necesita ser apagado y reiniciado (desconectar y volver a conectar después de unos minutos).
 
-_¿Te gustaría saber ¿te gustaría saber cómo proceder paso a paso para solucionar ese error??_";1.0;4.19;"es posible visualizar en la pantalla la temperatura actual
+_¿te gustaría saber cómo reiniciar el aparato o qué hacer si el error persiste?_";1.0;4.39;"es posible visualizar en la pantalla la temperatura actual
 del compartimento de cocción a partir de 30 °C aprox.
 y la temperatura ajustada, una encima de la otra.
 Al precalentar, el punto óptimo para introducir los ali-
@@ -4618,9 +4639,9 @@ Cuando se alcanza la temperatura interior del alimen-
 to:
 En caso necesario, se pueden efectuar más ajus-
 tes y volver a iniciar el funcionamiento.";['HornoEmpotrado.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Qué se debe hacer si la iluminación LED no funciona?;es;"Para solucionar el problema de la iluminación LED, lo primero que debes hacer es contactar con el **Servicio de Atención al Cliente**. El número de teléfono se encuentra en el directorio adjunto al manual. Si la lámpara LED está defectuosa, el servicio técnico podrá guiarte en el proceso de reparación o sustitución.
+gpt-oss:20b-cloud;¿Qué se debe hacer si la iluminación LED no funciona?;es;"Para solucionar el problema de la iluminación LED que no funciona, debes contactar al **Servicio de Atención al Cliente**. El número de teléfono se encuentra en el directorio adjunto del manual. Si la lámpara LED está defectuosa, también puedes llamar al **Servicio de Asistencia Técnica** (página 41) para que te indiquen los pasos a seguir o la posible sustitución del componente.
 
-_¿Te gustaría saber ¿te gustaría saber cómo localizar el número de servicio en el manual??_";1.0;4.72;"No se requiere ninguna acción.
+_¿te gustaría saber cómo comprobar si el led está defectuoso antes de llamar al servicio?_";1.0;10.7;"No se requiere ninguna acción.
 El aparato emite zumbidos duran-
 te el funcionamiento y tras apa-
 garlo.
@@ -4716,9 +4737,9 @@ Llame al .
  ""Servicio de Asistencia Técnica"", Página41
 El aparato no calienta.
 El modo Demo está activado.";['HornoEmpotrado.pdf', 'Frigorifico.pdf', 'Lavavajillas.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Cómo se inicia la autocomprobación del aparato?;es;"Para que el aparato realice la autocomprobación antes del primer uso, simplemente abre y cierra una vez la puerta del aparato. Esta acción activa la autocomprobación automática.
+gpt-oss:20b-cloud;¿Cómo se inicia la autocomprobación del aparato?;es;"Para que el aparato realice la autocomprobación antes del primer uso, simplemente abre y cierra una vez la puerta del aparato.
 
-_¿Te gustaría saber ¿quieres saber cómo limpiar el compartimento de cocción antes de usarlo por primera vez??_";1.0;3.94;"lla.
+_¿quieres saber cómo preparar el aparato antes de usarlo por primera vez?_";1.0;31.73;"lla.
 5. Para que el aparato realice la autocomprobación an-
 tes del primer uso, abrir y cerrar una vez la puerta del
 aparato.
@@ -4821,7 +4842,7 @@ programa tras unos 4 minutos.
 8. Cerrar el grifo de agua.";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'Lavavajillas.pdf', 'Lavavajillas.pdf']
 gpt-oss:20b-cloud;¿Qué significan 5 señales acústicas tras la autocomprobación?;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber cómo iniciar la autocomprobación del aparato??_";0.0;4.4;"14.1 Corte en el suministro eléctri-
+_¿quieres saber cómo interpretar las señales acústicas de la autocomprobación?_";0.0;24.18;"14.1 Corte en el suministro eléctri-
 co⁠ ⁠...............................................⁠ ⁠28
 14.2 Ejecutar la autocomproba-
 ción del aparato⁠ ⁠......................⁠ ⁠28
@@ -4904,7 +4925,7 @@ a través de la aplicación Home Connect si el usuario se
 encuentra en su red doméstica inalámbrica (wifi). Des-";['Frigorifico.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Durante cuántos años están disponibles las piezas de repuesto originales?;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿quieres saber cómo contactar al servicio técnico??_";1.0;4.32;"Lavar la fruta, retirar los huesos y,
+_¿te gustaría saber cómo solicitar piezas de repuesto originales?_";1.0;4.99;"Lavar la fruta, retirar los huesos y,
 si así se desea, pelarla antes de
 congelarla; dado el caso, se le
 puede añadir azúcar o una solu-
@@ -5009,9 +5030,9 @@ pantalla.
 4. Confirmar la eliminación.
 Seguro para niños17 Seguro para niños
 Asegurar el aparato para que los niños no lo enciendan";['Frigorifico.pdf', 'HornoEmpotrado.pdf', 'Lavavajillas.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Bajo qué condición pueden usar el aparato las personas con limitaciones físicas o mentales? ;es;"Las personas con limitaciones físicas, sensoriales o mentales pueden usar el aparato siempre que cuenten con la supervisión de una persona responsable de su seguridad o hayan sido instruidos previamente en su uso y comprendido los peligros que pueden derivarse del mismo.
+gpt-oss:20b-cloud;¿Bajo qué condición pueden usar el aparato las personas con limitaciones físicas o mentales? ;es;"Las personas con limitaciones físicas, sensoriales o mentales pueden usar el aparato siempre que cuenten con la supervisión de una persona responsable de su seguridad o hayan sido instruidos previamente en su uso y comprendan los peligros que pueden derivarse del mismo.
 
-_¿Te gustaría saber ¿te gustaría saber cómo instruir adecuadamente a alguien con limitaciones para usar el aparato??_";1.0;4.23;"nexión incorrecta no están cubiertos por la ga-
+_¿te gustaría saber cómo instruir adecuadamente a alguien con limitaciones para usar el aparato?_";1.0;24.59;"nexión incorrecta no están cubiertos por la ga-
 rantía.
 Utilizar el aparato únicamente:
 ¡ para preparar bebidas y comidas.
@@ -5086,9 +5107,9 @@ hasta 24 horas sin tener que cambiar el comportamien-
 to del aparato. Utilizar las funciones horarias y modificar
 los ajustes básicos.
 Nota: Si se abre la puerta del aparato durante el funcio-";['HornoEmpotrado.pdf', 'Frigorifico.pdf', 'Lavavajillas.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿A qué tipo de corriente eléctrica se debe conectar el aparato (alterna o continua)? ;es;"El aparato debe conectarse a la corriente alterna (AC) de la red eléctrica doméstica, ya que el manual indica que debe usarse una toma de corriente reglamentaria con puesta a tierra, característica típica de la alimentación de corriente alterna.
+gpt-oss:20b-cloud;¿A qué tipo de corriente eléctrica se debe conectar el aparato (alterna o continua)? ;es;"El aparato debe conectarse a corriente alterna (AC), ya que la instalación reglamentaria y la toma de tierra que se menciona en el manual están diseñadas para la corriente de red doméstica.
 
-_¿Te gustaría saber ¿necesitas saber cómo comprobar que la toma de corriente está correctamente conectada a tierra??_";1.0;3.47;"través de los tubos. El motor, los interruptores o las
+_¿necesitas saber cómo comprobar que la toma de corriente está correctamente conectada a tierra?_";1.0;5.3;"través de los tubos. El motor, los interruptores o las
 electroválvulas se conectan o desconectan. Se está re-
 alizando el desescarchado automático.
 No se requiere ninguna acción.
@@ -5167,9 +5188,9 @@ la habitación.
 Fallo electrónico
 1. Desenchufar el aparato de la red eléctrica desconectando durante al menos
 30 segundos el interruptor automático de la caja de fusibles.";['Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Qué riesgo específico corren los niños con el material de embalaje? ;es;"Los niños corren el riesgo de **asfixiarse** si se ponen el material de embalaje sobre la cabeza o se enrollan en él.
+gpt-oss:20b-cloud;¿Qué riesgo específico corren los niños con el material de embalaje? ;es;"Los niños corren el riesgo de **asfixiación** si se ponen el material de embalaje sobre la cabeza o se enrollan en él.
 
-_¿Te gustaría saber ¿te gustaría saber cómo almacenar el material de embalaje de forma segura??_";1.0;3.82;"Los niños pueden ponerse el material de embalaje por encima de
+_¿cómo puedo asegurar que el material de embalaje esté fuera del alcance de los niños?_";1.0;4.99;"Los niños pueden ponerse el material de embalaje por encima de
 la cabeza, o bien enrollarse en él, y asfixiarse.
 Mantener el material de embalaje fuera del alcance de los ni-
 ños.
@@ -5250,7 +5271,7 @@ Mantener a los niños alejados del aparato cuando esté abierto.
 es Evitar daños materiales";['Lavavajillas.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf', 'Lavavajillas.pdf']
 gpt-oss:20b-cloud;¿Cómo se debe guardar la carne cruda para que no gotee sobre otros alimentos? ;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿dónde se recomienda colocar la carne cruda dentro del frigorífico??_";1.0;5.62;"carcha en el congelador. Por tanto,
+_¿quieres saber cómo colocar la carne en el congelador para evitar goteo?_";1.0;27.84;"carcha en el congelador. Por tanto,
 no es necesario un desescarchado.
 Cuidados y limpieza13 Cuidados y limpieza
 Para que el aparato mantenga duran-
@@ -5367,9 +5388,10 @@ La zona menos fría se encuentra en
 la parte superior de la contrapuerta.
 Consejo: Guardar en la zona menos
 fría la comida menos perecedera,";['Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf', 'Frigorifico.pdf']
-gpt-oss:20b-cloud;¿Quién debe sustituir el cable de alimentación si este resulta dañado? ;es;"El cable de alimentación debe ser sustituido por personal especializado, a través del Servicio de Asistencia Técnica o directamente del fabricante.
+gpt-oss:20b-cloud;¿Quién debe sustituir el cable de alimentación si este resulta dañado? ;es;"El cable de alimentación debe ser sustituido por personal especializado.  
+El nuevo cable debe ser un cable de alimentación o conexión a la red especial, que se puede adquirir a través del Servicio de Asistencia Técnica o directamente del fabricante.
 
-_¿Te gustaría saber ¿dónde puedo adquirir el cable de reemplazo??_";1.0;3.92;"eléctrica!
+_¿te gustaría saber cómo contactar al servicio de asistencia técnica?_";1.0;3.91;"eléctrica!
 Las reparaciones inadecuadas son peligrosas.
 Solo el personal especializado puede reali-
 zar reparaciones e intervenciones en el apa-
@@ -5447,9 +5469,9 @@ Pulse .
 Cierre el grifo de agua.
 Desenchufe el cable de conexión de la toma de
 corriente.";['HornoEmpotrado.pdf', 'Frigorifico.pdf', 'Lavavajillas.pdf', 'Lavavajillas.pdf']
-gpt-oss:20b-cloud;¿Qué le ocurre al aluminio del aparato si toca comida ácida? ;es;"El aluminio en contacto con comida ácida se corroe y decolora, lo que puede provocar daños visibles y pérdida de la integridad del material.
+gpt-oss:20b-cloud;¿Qué le ocurre al aluminio del aparato si toca comida ácida? ;es;"El aluminio en contacto con comida ácida se corroe y decolora.
 
-_¿Te gustaría saber ¿te gustaría saber cómo evitar que esto suceda al almacenar alimentos en el aparato??_";1.0;3.32;"te provoca daños.
+_¿te gustaría saber cómo evitar que esto suceda?_";1.0;16.46;"te provoca daños.
 Utilizar un detergente indicado por el
 fabricante como suave o no agresivo.
 Los productos de limpieza con alto
@@ -5549,9 +5571,9 @@ de cerrar la puerta del aparato.
 Al subirse o apoyarse sobre el apara-
 to, pedestales, cajones o puertas, se
 puede dañar el aparato.";['Lavavajillas.pdf', 'HornoEmpotrado.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf']
-gpt-oss:20b-cloud;¿Qué tipo de radiación natural se debe evitar sobre el aparato? ;es;"Debes evitar la **radiación solar directa** sobre el aparato. La exposición directa al sol puede provocar sobrecalentamiento y la formación de agua de condensación dentro del compartimento, lo que puede dañar el esmalte y afectar el rendimiento del electrodoméstico.
+gpt-oss:20b-cloud;¿Qué tipo de radiación natural se debe evitar sobre el aparato? ;es;"Se debe evitar la radiación solar directa sobre el aparato.
 
-_¿Te gustaría saber ¿te gustaría saber cómo colocar el aparato para minimizar la exposición al sol??_";1.0;3.61;"guardar comida envasada.
+_¿quieres saber dónde colocar el aparato para protegerlo de la radiación solar?_";1.0;4.61;"guardar comida envasada.
 Si se lavan los elementos y acceso-
 rios del aparato en el lavavajillas, se
 podría producir su deformación o de-
@@ -5649,7 +5671,7 @@ mente o con la función de secado.
 2. Eliminar la suciedad del compartimento de cocción.";['Frigorifico.pdf', 'Frigorifico.pdf', 'Lavavajillas.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿En qué tipo de bolsa se recomienda llevar los alimentos a casa? ;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿quieres saber cómo limpiar los brazos de aspersión??_";0.0;3.28;"sentido horario.
+_¿cómo se limpia el depósito de agua del lavavajillas?_";0.0;4.57;"sentido horario.
 Asegurarse de que las marcas
 en forma de flecha estén una
 frente a otra.
@@ -5744,7 +5766,7 @@ tornos residenciales típicos; en pensiones con desayuno.
 Este aparato podrá ser usado por niños a partir de 8 años y por";['Lavavajillas.pdf', 'HornoEmpotrado.pdf', 'Lavavajillas.pdf', 'Lavavajillas.pdf']
 gpt-oss:20b-cloud;¿Por qué se debe dejar espacio entre los alimentos y la pared posterior? ;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿quieres saber cómo colocar correctamente los alimentos en el compartimento??_";0.0;5.73;"da.
+_¿quieres saber cómo colocar los alimentos en la parrilla para asegurar una cocción uniforme?_";0.0;5.12;"da.
 Nota: Si se quiere dar la vuelta a los ali-
 mentos, colocar la termosonda lateralmen-
 te en el alimento para que no haya que re-
@@ -5833,198 +5855,218 @@ la pantalla.
  ""Ajustar el modo de funcionamiento"", Página14
 8
 Modos de funcionamiento es";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Qué número corresponde al compartimento para mantequilla en la ilustración del aparato? ;es;"No he encontrado esa información en los manuales.
+gpt-oss:20b-cloud;¿Qué componentes internos no deben entrar nunca en contacto con el agua de limpieza?;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber cómo limpiar o mantener el compartimento de mantequilla??_";0.0;3.65;"ten al funcionamiento del aparato.
-Rejillas
-En las rejillas del compartimento de cocción pueden in-
-troducirse accesorios en diferentes alturas.
- ""Accesorios"", Página12
-El aparato tiene cinco alturas de inserción. Dichas altu-
-ras de inserción se numeran de abajo arriba.
-Las rejillas pueden desengancharse, p. ej., para limpiar-
-las.
- ""Rejillas"", Página38
-Iluminación
-Una o varias luces iluminan el compartimento de coc-
-ción.
-Si se abre la puerta del aparato, se vuelve a encender
-la iluminación del compartimento de cocción. Si la puer-
-ta permanece abierta más de 18 min aprox., se vuelve
-a apagar la iluminación.
-Si se inicia el funcionamiento, la iluminación se encien-
-de en la mayoría de los modos. Cuando el funciona-
-miento ha finalizado, la iluminación se apaga.
-Ventilador
+_¿quieres saber cómo limpiar los brazos de aspersión?_";0.0;8.94;"carcha en el congelador. Por tanto,
+no es necesario un desescarchado.
+Cuidados y limpieza13 Cuidados y limpieza
+Para que el aparato mantenga duran-
+te mucho tiempo su capacidad fun-
+cional, debe mantenerse y limpiarse
+con cuidado.
+El Servicio de Asistencia Técnica de-
+be encargarse de la limpieza de los
+lugares de difícil acceso. La limpieza
+por parte del Servicio de Asistencia
+Técnica puede generar costes.
+13.1 Preparar el aparato para
+su limpieza
+1. Desconectar el aparato de la red
+eléctrica.
+Extraer el enchufe del cable de co-
+nexión de red o desconectar el fu-
+sible de la caja de fusibles.
+2. Retirar los alimentos y guardarlos
+en un lugar fresco.
+Colocar acumuladores de frío di-
+rectamente sobre los alimentos, si
+se dispone de ellos.
+3. Retirar todos los elementos adicio-
 
-(E-Nr.), el número de fabricación (FD)
-52
-Datos técnicos es
-y el número de conteo (Z-Nr.) del
-aparato.
-En el documento adjunto sobre con-
-tactos de servicio y condiciones de
-garantía o en nuestra página web fi-
-guran los datos de contacto del ser-
-vicio al cliente mediante el código
-QR.
-20.1 Número de producto (E-
-Nr.), número de fabrica-
-ción (FD) y número de
-conteo (Z-Nr.)
-El número de producto (E-Nr.), el nú-
-mero de fabricación (FD) y el número
-de conteo (Z-Nr.) se encuentran en la
-placa de características del aparato.
-La placa de características se en-
-cuentra en la parte interior de la
-puerta del aparato.
- ""Familiarizándose con el aparato"",
-Página14
-Para volver a encontrar rápidamente
-los datos del aparato o el número de
-teléfono del Servicio de Asistencia
+sentido horario.
+Asegurarse de que las marcas
+en forma de flecha estén una
+frente a otra.
+Consejo: Conectar el aparato con un
+dispositivo móvil. La aplicación Ho-
+me Connect le informa en cuanto ten-
+ga que limpiar los filtros.
+ ""Home Connect "", Página38
+17.6 Limpiar los brazos de as-
+persión
+Los depósitos de cal o las partículas
+de suciedad procedentes del agua
+de lavado pueden obstruir las boqui-
+llas y los apoyos de los brazos de
+aspersión. Limpiar los brazos de as-
+persión regularmente.
+1. Desenroscar el brazo de aspersión
+superior  y extraerlo de su em-
+plazamiento hacia abajo .
+43
+es Solucionar pequeñas averías
+2. Extraer el brazo de aspersión infe-
+rior hacia arriba.
+3. Comprobar si hay obstrucciones
+en las boquillas de salida de los
+brazos de aspersión bajo el chorro
 
-Apagar el aparato con  .
-Secado24 Secado
-Tras usar un modo de cocción al vapor y tras el asisten-
-te de limpieza, secar el compartimento de cocción para
-evitar la humedad residual.
-ATENCIÓN
-La presencia de agua en la base del compartimento de
-cocción mientras el aparato está funcionando a tempe-
-raturas superiores a 120 °C provoca daños en el es-
-malte.
-No poner el aparato en funcionamiento cuando haya
-agua en la base del compartimento de cocción.
-Limpiar el agua de la base del compartimento de
-cocción del aparato antes de ponerlo en funciona-
-miento.
-24.1 Secar el compartimento de cocción
-El compartimento de cocción se puede secar manual-
-mente o con la función de secado.
-1. Dejar que el aparato se enfríe.
-2. Eliminar la suciedad del compartimento de cocción.
+20.2 Limpiar el aparato
+Para evitar daños en el aparato, debe limpiarse solo se-
+gún lo especificado y con los productos de limpieza
+adecuados.
+ADVERTENCIA ‒ ¡Riesgo de quemaduras!
+El aparato y las piezas con las que el usuario entra en
+contacto se calentarán durante el uso.
+Proceder con precaución para evitar entrar en con-
+tacto con las resistencias.
+Los niños pequeños (menores de 8 años) deben
+mantenerse alejados.
+ADVERTENCIA ‒ ¡Riesgo de incendio!
+Los restos de comida, grasa y jugo de asado pueden
+arder.
+Antes de poner en funcionamiento, eliminar la sucie-
+dad gruesa del compartimento de cocción, de la re-
+sistencia y de los accesorios.
+Requisito: Tener en cuenta las notas sobre los produc-
+tos de limpieza.
+ ""Productos de limpieza"", Página29
 
-lla.
-5. Para que el aparato realice la autocomprobación an-
-tes del primer uso, abrir y cerrar una vez la puerta del
-aparato.
-7.3 Limpiar el aparato antes de usarlo por
-primera vez
-Limpiar el compartimento de cocción y los accesorios
-antes de preparar por primera vez cualquier alimento.
-1. Retirar la información sobre el producto y el acceso-
-rio del compartimento de cocción. Retirar los restos
-del embalaje de dentro y fuera del aparato (p. ej., bo-
-las de poliestireno y cinta adhesiva).
-2. Limpiar las superficies lisas del compartimento de
-cocción con un paño suave y húmedo.
-3. Encender el aparato con  .
-4. Llenar el depósito de agua.
- ""Llenar el depósito de agua"", Página17
-5. Efectuar los siguientes ajustes:
-Modo de calentamiento
-Aire caliente 4D 
-Temperatura
-máxima
-Adición de vapor
-3";['HornoEmpotrado.pdf', 'Lavavajillas.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;"¿Qué indica el número ""2"" en el diagrama del panel de mando? ";es;"No he encontrado esa información en los manuales.
+Al finalizar el programa, esperar a
+que la vajilla se enfríe un poco an-
+tes de abrir la puerta.
+1. Para evitar la caída de gotas de
+agua en la vajilla, extraiga la vajilla
+desde abajo hacia arriba.
+2. Comprobar si la cuba y los acce-
+sorios presentan suciedad y lim-
+piarlos si es necesario.
+ ""Cuidados y limpieza"",
+Página40
+Manejo básico14 Manejo básico
+14.1 Encender el aparato
+Pulsar .
+Está preajustado el programa
+Eco 50°.
+El programa Eco 50° es un pro-
+grama especialmente respetuoso
+con el medioambiente e ideal para
+vajillas con un grado de suciedad
+normal. Es el programa más efi-
+ciente en cuanto a la combinación
+de consumo de energía y agua pa-
+ra este tipo de vajillas, y demues-
+tra conformidad con el reglamento
+sobre diseño ecológico de la UE.
+Si no se utiliza el aparato durante";['Frigorifico.pdf', 'Lavavajillas.pdf', 'HornoEmpotrado.pdf', 'Lavavajillas.pdf']
+gpt-oss:20b-cloud;¿Qué dos sustancias se pueden añadir a la fruta antes de congelarla?;es;"Azúcar y una solución de ácido ascórbico.
 
-_¿Te gustaría saber ¿te gustaría saber cómo acceder a la zona de programación en el panel??_";0.0;4.19;"para el mantenimiento está activado.
- ""Home Connect "", Página27
-Acceso a diferentes funciones.
-Zona de programación
-En el centro de la pantalla se muestra la zona de pro-
-gramación.
-En la zona de programación se muestran las posibilida-
-des de selección actuales y los ajustes ya realizados.
-A izquierda y derecha de la zona de programación, fue-
-ra del anillo de ajuste, se visualizan otras posibilidades
-de ajuste.
-El menú y otras posibilidades de ajuste están dispues-
-tos en horizontal. Las listas de selección de funciones
-están dispuestas en vertical. Deslizar el dedo por la
-pantalla para desplazarse por la zona de programación.
-Para seleccionar una función, pulsar sobre la función en
-la pantalla.
- ""Ajustar el modo de funcionamiento"", Página14
-8
-Modos de funcionamiento es
+_¿quieres saber cómo preparar la solución de ácido ascórbico para usarla con la fruta?_";1.0;4.62;"Lavar la fruta, retirar los huesos y,
+si así se desea, pelarla antes de
+congelarla; dado el caso, se le
+puede añadir azúcar o una solu-
+ción de ácido ascórbico.
+Algunos alimentos apropiados pa-
+ra congelar son el pan y la bolle-
+ría, el pescado, el marisco, la car-
+ne, la caza, las aves, los huevos
+sin cáscara, el queso, la mantequi-
+lla, el requesón, los platos precoci-
+nados y los restos de comida.
+Algunos alimentos no apropiados
+para congelar son las lechugas,
+los rabanitos, los huevos con cás-
+cara, las uvas, las manzanas o pe-
+ras crudas, los yogures, la nata
+agria o fresca y la mayonesa.
+Envasar productos congelados
+Utilizar el tipo y el material de emba-
+laje adecuados permite conservar
+significativamente la calidad de los
+productos y evitar que se quemen
+por congelación.
 
-de eficiencia energética G. Las fuentes de luz se en-
-cuentran disponibles como repuesto y puede ser reem-
-plazadas únicamente por un personal especializado.
-La información conforme a los reglamentos (EU)
-65/2014, (EU) 66/2014 y (EU) 2023/826 se puede en-
-contrar online en www.bosch-home.com en las seccio-
-nes referentes al producto y servicio al cliente, en el
-área de manuales y documentos.
-29.1 Número de producto (E-Nr.), número de
-fabricación (FD) y número de conteo (Z-Nr.)
-El número de producto (E-Nr.), el número de fabricación
-(FD) y el número de conteo (Z-Nr.) se encuentran en la
-placa de características del aparato.
-La placa de características con los correspondientes
-números se encuentra al abrir la puerta del aparato. En
-41
+rán entrar en contacto con los ali-
+20
+Congelador es
+mentos frescos que se desee con-
+gelar.
+Distribuir los alimentos ampliamen-
+te en los recipientes para produc-
+tos congelados.
+Para que el aire pueda circular li-
+bremente por el aparato, el reci-
+piente para productos congelados
+debe estar insertado hasta el tope.
+11.4 Consejos para congelar
+alimentos frescos
+Congelar solo alimentos frescos y
+en perfectas condiciones.
+Congelar alimentos en porciones.
+Los alimentos preparados son
+más adecuados que los alimentos
+crudos.
+Lavar, trocear y escaldar la verdu-
+ra antes de congelarla.
+Lavar la fruta, retirar los huesos y,
+si así se desea, pelarla antes de
+congelarla; dado el caso, se le
+puede añadir azúcar o una solu-
+ción de ácido ascórbico.
+Algunos alimentos apropiados pa-
 
-(E-Nr.), el número de fabricación (FD)
-52
-Datos técnicos es
-y el número de conteo (Z-Nr.) del
-aparato.
-En el documento adjunto sobre con-
-tactos de servicio y condiciones de
-garantía o en nuestra página web fi-
-guran los datos de contacto del ser-
-vicio al cliente mediante el código
-QR.
-20.1 Número de producto (E-
-Nr.), número de fabrica-
-ción (FD) y número de
-conteo (Z-Nr.)
-El número de producto (E-Nr.), el nú-
-mero de fabricación (FD) y el número
-de conteo (Z-Nr.) se encuentran en la
-placa de características del aparato.
-La placa de características se en-
-cuentra en la parte interior de la
-puerta del aparato.
- ""Familiarizándose con el aparato"",
-Página14
-Para volver a encontrar rápidamente
-los datos del aparato o el número de
-teléfono del Servicio de Asistencia
+berá efectuarse a una temperatura
+de –18 °C o más baja.
+Los alimentos perecederos pueden
+almacenarse congelados durante
+mucho tiempo. Las bajas temperatu-
+ras ralentizan o detienen su deterio-
+ro.
+11.1 Capacidad de congela-
+ción
+La capacidad máxima de congela-
+ción indica qué cantidad de alimen-
+tos se puede congelar hasta el nú-
+cleo en un periodo de tiempo especi-
+fico.
+Encontrará información sobre la ca-
+pacidad de congelación en la placa
+de características del aparato.
+ ""Aparato"", Fig. 1 /
+Página13
+Condiciones para alcanzar la ca-
+pacidad de congelación
+1. Aprox. 24 horas antes de introdu-
+cir los alimentos frescos, encender
+Supercongelación.
+ ""Activar Supercongelación"",
+Página18
+2. Colocar los alimentos primero en
+el compartimento de congelación
+situado más arriba.
 
-28
-Eliminación⁠ ⁠.......................................................... ⁠ ⁠41
-29
-Servicio de Asistencia Técnica⁠ ⁠ ......................... ⁠ ⁠41
-30
-Informaciones referentes al software libre y
-de código abierto⁠ ⁠................................................ ⁠ ⁠42
-31
-Declaración de conformidad⁠ ⁠ ............................. ⁠ ⁠42
-32
-Así se consigue⁠ ⁠ .................................................. ⁠ ⁠42
-33
-INSTRUCCIONES DE MONTAJE⁠ ⁠....................... ⁠ ⁠51
-33.1
-Indicaciones de montaje generales⁠ ⁠............... ⁠ ⁠51
-Seguridad
- 1 Seguridad
-Tenga en cuenta las siguientes indicaciones
-de seguridad.
-1.1 Advertencias de carácter general
-¡ Lea atentamente estas instrucciones.
-¡ Conservar las instrucciones y la información
-del producto para un uso posterior o para";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'Lavavajillas.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Cómo es la temperatura del recipiente de almacenamiento en comparación con el resto del frigorífico? ;es;"El recipiente de almacenamiento siempre mantiene temperaturas más bajas que el compartimento frigorífico.  
-En ocasiones puede registrar valores inferiores a 0 °C; para que el recipiente alcance temperaturas cercanas a 0 °C, se debe ajustar la temperatura del compartimento frigorífico a 2 °C.
+hasta 24 horas sin tener que cambiar el comportamien-
+to del aparato. Utilizar las funciones horarias y modificar
+los ajustes básicos.
+Nota: Si se abre la puerta del aparato durante el funcio-
+namiento, el aparato deja de calentar. Si se cierra la
+puerta, el aparato continúa calentándose. Para que el
+comportamiento del aparato no varíe durante el funcio-
+namiento, no abrir la puerta del aparato hasta que haya
+transcurrido el tiempo ajustado.
+1. Modificar los ajustes básicos.
+ ""Ajustes básicos"", Página26
+Modificar el ajuste básico «Iluminación» a «Siem-
+pre desactivada».
+Modificar el ajuste básico «Modo del reloj» a
+«Act.».
+Cambiar el ajuste básico «Tono de aviso» a «Muy
+corta duración».
+De esta forma, la iluminación del compartimento de
+cocción estará siempre apagada durante el funciona-";['Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf']
+gpt-oss:20b-cloud;¿Cómo es la temperatura del recipiente de almacenamiento en comparación con el resto del frigorífico? ;es;"El recipiente de almacenamiento mantiene temperaturas más bajas que el compartimento frigorífico. En ocasiones se registran valores inferiores a 0 °C; para que el recipiente alcance temperaturas cercanas a 0 °C, se debe ajustar la temperatura del compartimento frigorífico a 2 °C.
 
-_¿Te gustaría saber ¿te gustaría saber cómo ajustar la temperatura del compartimento frigorífico??_";1.0;4.62;"de del modelo.
+_¿cómo se activa la supercongelación en el aparato?_";1.0;5.48;"de del modelo.
 6.1 Bandeja
 Si se desea modificar la posición de
 las bandejas según sea necesario,
@@ -6143,7 +6185,7 @@ el compartimento de congelación
 situado más arriba.";['Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf']
 gpt-oss:20b-cloud;¿Qué nivel de humedad se obtiene deslizando el regulador hacia la izquierda? ;es;"Deslizando el regulador hacia la izquierda se obtiene un **nivel de humedad bajo** en el cajón para fruta y verdura.
 
-_¿Te gustaría saber ¿te gustaría saber cómo ajustar el nivel de humedad hacia la derecha??_";1.0;3.26;"para ajustar la humedad del aire en
+_¿te gustaría saber cómo ajustar el nivel de humedad hacia la derecha?_";1.0;3.24;"para ajustar la humedad del aire en
 el cajón para fruta y verdura, en fun-
 ción de la naturaleza y la cantidad de
 alimentos que se vayan a guardar en
@@ -6241,9 +6283,9 @@ media patata como apoyo.
 2. Introducir el alimento dentro del compartimento de
 cocción con la termosonda.
 3. Conectar la termosonda en el enchufe situado en el";['Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Para qué tipo de carga se recomienda el nivel alto de humedad (derecha)? ;es;"Para el nivel alto de humedad (deslizar a la derecha) se recomienda guardar principalmente verduras o una carga pequeña de alimentos.
+gpt-oss:20b-cloud;¿Para qué tipo de carga se recomienda el nivel alto de humedad (derecha)? ;es;"Para el nivel de humedad alto (deslizar hacia la derecha) se recomienda guardar principalmente verduras o una carga pequeña de alimentos.
 
-_¿Te gustaría saber ¿quieres saber cómo eliminar el agua de condensación que se forma en el cajón??_";1.0;3.83;"para ajustar la humedad del aire en
+_¿te gustaría saber cómo eliminar el agua de condensación que se forma en el cajón?_";1.0;4.17;"para ajustar la humedad del aire en
 el cajón para fruta y verdura, en fun-
 ción de la naturaleza y la cantidad de
 alimentos que se vayan a guardar en
@@ -6343,7 +6385,7 @@ se dispone de ellos.
 3. Retirar todos los elementos adicio-";['Frigorifico.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'Frigorifico.pdf']
 gpt-oss:20b-cloud;¿A qué rango de temperatura exterior se deben guardar los plátanos o piñas? ;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber cómo almacenar otra fruta específica??_";0.0;3.87;"es posible visualizar en la pantalla la temperatura actual
+_¿te gustaría saber cómo almacenar otros tipos de frutas o alimentos en el refrigerador?_";1.0;6.19;"es posible visualizar en la pantalla la temperatura actual
 del compartimento de cocción a partir de 30 °C aprox.
 y la temperatura ajustada, una encima de la otra.
 Al precalentar, el punto óptimo para introducir los ali-
@@ -6440,9 +6482,9 @@ almacenarse congelados durante
 mucho tiempo. Las bajas temperatu-
 ras ralentizan o detienen su deterio-
 ro.";['HornoEmpotrado.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf']
-gpt-oss:20b-cloud;¿Hasta qué nivel se debe llenar la bandeja para cubitos de hielo? ;es;"Debes llenar la bandeja hasta aproximadamente ¾ de su capacidad.
+gpt-oss:20b-cloud;¿Hasta qué nivel se debe llenar la bandeja para cubitos de hielo? ;es;"La bandeja para cubitos de hielo debe llenarse hasta aproximadamente ¾ de su capacidad.
 
-_¿Te gustaría saber ¿te gustaría saber cómo separar las bandejas para cubitos de hielo??_";1.0;3.17;"Utilizar solo agua potable para pre-
+_¿te gustaría saber cómo retirar los cubitos de la bandeja sin romperlos?_";1.0;3.89;"Utilizar solo agua potable para pre-
 parar cubitos de hielo.
 1. Llenar con agua potable ¾ partes
 de la bandeja para cubitos de hie-
@@ -6558,9 +6600,10 @@ Retirar el recipiente para produc-
 tos congelados
 1. Sacar el compartimento de conge-
 lación hasta el tope.";['Frigorifico.pdf', 'Frigorifico.pdf', 'Lavavajillas.pdf', 'Frigorifico.pdf']
-gpt-oss:20b-cloud;"¿Qué indica que parpadee la temperatura del congelador y se ilumine ""alarm"" al encender el aparato? ";es;"El parpadeo de la temperatura del congelador junto con la luz “alarm” al encender el aparato indica que la temperatura del congelador está **demasiado alta**. Esta alarma se activa cuando la unidad no ha alcanzado la temperatura ajustada o cuando la temperatura actual supera el rango seguro, lo que puede poner en riesgo la conservación de los alimentos.
+gpt-oss:20b-cloud;"¿Qué indica que parpadee la temperatura del congelador y se ilumine ""alarm"" al encender el aparato? ";es;"El parpadeo de la temperatura del congelador junto con la luz “alarm” indica que la temperatura del congelador está **demasiado alta**.  
+Cuando el aparato detecta que la temperatura supera el rango seguro, activa la alarma acústica y visual para alertarte de que el congelador no está funcionando a la temperatura adecuada.
 
-_¿Te gustaría saber ¿te gustaría saber cómo ajustar la temperatura del congelador para evitar que se active la alarma??_";1.0;6.24;"cia y la indicación de la temperatu-
+_¿qué pasos debo seguir para solucionar esta alarma y bajar la temperatura del congelador?_";1.0;5.63;"cia y la indicación de la temperatu-
 ra (congelador) parpadea y
 ""alarm"" se ilumina porque la tem-
 peratura del congelador es dema-
@@ -6678,7 +6721,7 @@ No guardar el alimento hasta su
 fecha máxima de conservación.";['Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf']
 gpt-oss:20b-cloud;¿Qué función cumple el calentamiento ligero de las paredes laterales? ;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber cómo activar el calentamiento ligero de las paredes laterales??_";0.0;3.84;"de lateral superior.
+_¿te gustaría saber cómo ajustar la temperatura del horno?_";0.0;4.09;"de lateral superior.
 3. Presionar hacia el interior las pa-
 lancas situadas en los laterales ex-
 teriores izquierdo y derecho del
@@ -6786,7 +6829,7 @@ en la pantalla aparece ""0h:00m"".
 33";['Lavavajillas.pdf', 'Lavavajillas.pdf', 'HornoEmpotrado.pdf', 'Lavavajillas.pdf']
 gpt-oss:20b-cloud;"¿Cuántos segundos hay que mantener pulsado ""lock"" para activar el bloqueo? ";es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber cómo limpiar los brazos de aspersión??_";0.0;5.45;"sentido horario.
+_¿quieres saber cómo activar el bloqueo de la puerta?_";1.0;5.16;"sentido horario.
 Asegurarse de que las marcas
 en forma de flecha estén una
 frente a otra.
@@ -6896,9 +6939,9 @@ están guardados.
 Consejo: Para restablecer el progra-
 ma de fábrica al programa de prela-
 vado memorizado,  1 utilizar la aplica-";['Lavavajillas.pdf', 'HornoEmpotrado.pdf', 'Lavavajillas.pdf', 'Lavavajillas.pdf']
-gpt-oss:20b-cloud;¿Qué letras aparecen en la pantalla del frigorífico al activar Superfrío? ;es;"Al activar la función Superfrío, en la pantalla del compartimento frigorífico aparecen las letras **“SU”**.
+gpt-oss:20b-cloud;¿Qué letras aparecen en la pantalla del frigorífico al activar Superfrío? ;es;"En la pantalla del frigorífico aparecen las letras **“SU”** cuando se activa la función Superfrío.
 
-_¿Te gustaría saber ¿te gustaría saber cómo desactivar la función superfrío??_";1.0;4.34;"compartimento frigorífico se enfría
+_¿te gustaría saber cómo desactivar la función superfrío?_";1.0;3.07;"compartimento frigorífico se enfría
 hasta alcanzar la temperatura más
 baja posible.
 Encender Superfrío antes de almace-
@@ -6995,9 +7038,9 @@ PRECAUCIÓN ‒ ¡Riesgo de daños para la salud!
 Para evitar la contaminación de los alimentos, se deben tener en
 cuenta las siguientes indicaciones.
 Si se abre la puerta durante un tiempo prolongado, se puede";['Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf']
-gpt-oss:20b-cloud;¿Cuál es la duración máxima en horas de la función Supercongelación? ;es;"La función Supercongelación se desactiva automáticamente después de **54 horas** de funcionamiento.
+gpt-oss:20b-cloud;¿Cuál es la duración máxima en horas de la función Supercongelación? ;es;"La función Supercongelación se desactiva automáticamente después de **54 horas**.
 
-_¿Te gustaría saber ¿te gustaría saber cómo activar la función supercongelación??_";1.0;4.34;"que ""super cool"" se apague.
+_¿te gustaría saber cómo activar o desactivar la función supercongelación?_";1.0;4.25;"que ""super cool"" se apague.
 Muestra la temperatura ajustada
 anteriormente.
 8.2 Supercongelación
@@ -7095,7 +7138,7 @@ cocción con la termosonda.
 3. Conectar la termosonda en el enchufe situado en el";['Frigorifico.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Qué palabra se ilumina en el panel al activar el modo de ahorro de energía? ;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber cómo activar el modo de ahorro de energía en tu aparato??_";0.0;4.98;"res y la iluminación in-
+_¿te gustaría saber cómo activar el modo de ahorro de energía?_";0.0;5.34;"res y la iluminación in-
 terior se iluminan.
 El modo de exposición está activado.
 1. Desconectar el aparato de la red eléctrica.
@@ -7180,9 +7223,9 @@ Llame al .
  ""Servicio de Asistencia Técnica"", Página41
 El aparato no calienta.
 El modo Demo está activado.";['Frigorifico.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Qué botón se debe mantener pulsado para activar el modo Sabbat? ;es;"Para activar el modo Sabbat, mantén pulsado el botón **Fridge** durante 15 segundos hasta que suene una señal.
+gpt-oss:20b-cloud;¿Qué botón se debe mantener pulsado para activar el modo Sabbat? ;es;"Para activar el modo Sabbat, mantén pulsado el botón **Fridge** durante 15 segundos hasta que suene una señal.
 
-_¿Te gustaría saber ¿te gustaría saber cómo desactivar el modo sabbat??_";1.0;4.16;"frigorífico
+_¿te gustaría saber cómo desactivar el modo sabbat?_";1.0;3.36;"frigorífico
 8 °C
 Congelador
 −16 °C
@@ -7284,7 +7327,7 @@ Se ha modificado el ajuste básico.
 Modificar el ajuste básico del indicador de la hora.";['Frigorifico.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Cuántos segundos hay que pulsar el botón para iniciar el modo Sabbat? ;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿quieres saber cómo cambiar el modo de funcionamiento??_";0.0;4.23;"También se puede interrumpir el funcionamiento para
+_¿te gustaría saber cómo activar otro modo de funcionamiento?_";0.0;3.81;"También se puede interrumpir el funcionamiento para
 que continúe después.
 1. Para interrumpir el funcionamiento, pulsar 
 .
@@ -7371,13 +7414,13 @@ pantalla.
 4. Confirmar la eliminación.
 Seguro para niños17 Seguro para niños
 Asegurar el aparato para que los niños no lo enciendan";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Qué ocurre visualmente con la indicación de temperatura cuando salta la alarma? ;es;"Cuando la alarma de temperatura se activa, la pantalla del congelador muestra lo siguiente:  
-- El indicador de temperatura parpadea.  
-- Se muestra brevemente la temperatura más alta registrada en el congelador.  
-- Luego vuelve a mostrar la temperatura que se había ajustado.  
-- Al mismo tiempo, el símbolo “alarm” se ilumina y suena la señal acústica.
+gpt-oss:20b-cloud;¿Qué ocurre visualmente con la indicación de temperatura cuando salta la alarma? ;es;"Cuando la alarma de temperatura se activa, la pantalla muestra lo siguiente:
 
-_¿Te gustaría saber ¿quieres saber cómo desactivar la alarma de temperatura??_";1.0;5.18;"cia y la indicación de la temperatu-
+- El indicador de temperatura (del congelador) parpadea o se ilumina de forma intermitente.  
+- La luz “alarm” se enciende y permanece iluminada hasta que el congelador vuelve a alcanzar la temperatura ajustada.  
+- En el momento de la activación, la pantalla puede mostrar brevemente la temperatura más alta registrada antes de volver a mostrar la temperatura ajustada.
+
+_¿te gustaría saber cómo desactivar la alarma de temperatura?_";1.0;7.38;"cia y la indicación de la temperatu-
 ra (congelador) parpadea y
 ""alarm"" se ilumina porque la tem-
 peratura del congelador es dema-
@@ -7481,9 +7524,9 @@ los 60 °C. el anillo se apaga por completo.
 11
 es Accesorios
 Accesorios6 Accesorios";['Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Qué dato muestra brevemente el panel tras desactivar una alarma de temperatura? ;es;"Tras desactivar la alarma de temperatura, el panel muestra brevemente la **temperatura más elevada registrada en el congelador** antes de volver a mostrar la temperatura ajustada.
+gpt-oss:20b-cloud;¿Qué dato muestra brevemente el panel tras desactivar una alarma de temperatura? ;es;"El panel muestra brevemente la **temperatura más elevada registrada en el congelador**.
 
-_¿Te gustaría saber ¿te gustaría saber cómo activar la función de supercongelación??_";1.0;4.78;"por completo.
+_¿te gustaría saber cómo activar la función de supercongelación?_";0.0;4.74;"por completo.
 Desactivar la alarma de tempera-
 tura
 Pulsar cualquier campo táctil.
@@ -7599,7 +7642,7 @@ Hay diferentes causas posibles.
 1. Pulsar cualquier campo táctil.";['Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf']
 gpt-oss:20b-cloud;¿Cuál es el rango de temperatura ajustable en grados para el frigorífico? ;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber el rango de temperatura para el modo de cocción??_";0.0;3.96;"temperatura interior del alimento en el panel indica-
+_¿te gustaría saber el rango de temperatura para el modo de cocción?_";0.0;10.75;"temperatura interior del alimento en el panel indica-
 dor y, en caso necesario, finalizar el funcionamiento
 manualmente.
 Modificar la temperatura
@@ -7689,7 +7732,7 @@ ción sobre la función ya seleccionada. El aparato mues-
 tra algunas indicaciones automáticamente, p. ej, para";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;"¿En qué zona del frigorífico se encuentra la parte ""menos fría""? ";es;"La zona menos fría del frigorífico se localiza en la parte superior de la contrapuerta.
 
-_¿Te gustaría saber ¿te gustaría saber cómo organizar los alimentos en las distintas zonas de frío??_";1.0;3.66;"tacto directo con el panel posterior
+_¿te gustaría saber cómo organizar los alimentos en las distintas zonas de frío?_";1.0;3.42;"tacto directo con el panel posterior
 para no perjudicar la circulación
 de aire y evitar que se congelen
 los alimentos.
@@ -7784,7 +7827,7 @@ eliminación.
 4. Limpiar la puerta del aparato y los bordes del com-";['Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Cuál es la temperatura más baja que se puede seleccionar en el congelador? ;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber cuál es la temperatura máxima que se puede seleccionar en el congelador??_";0.0;3.91;"mento en cuestión puede encontrarse en la descripción
+_¿quieres saber cómo ajustar la temperatura del compartimento de cocción?_";0.0;5.63;"mento en cuestión puede encontrarse en la descripción
 de los modos de calentamiento.
  ""Modos de calentamiento"", Página10
 Modificar el modo de calentamiento
@@ -7883,9 +7926,9 @@ Página16
 –
  ""Función de ventilación Crisp Finish"", Página20
 –";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Dónde se pueden apilar los alimentos si se retiran los accesorios del congelador? ;es;"Puedes apilar los alimentos directamente sobre el piso del congelador, una vez que hayas retirado todos los accesorios y elementos del mismo.
+gpt-oss:20b-cloud;¿Dónde se pueden apilar los alimentos si se retiran los accesorios del congelador? ;es;"Puedes apilar los alimentos directamente sobre el piso del congelador, una vez que hayas retirado todos los elementos y accesorios.
 
-_¿Te gustaría saber ¿te gustaría saber cómo organizar los alimentos en recipientes para maximizar el espacio??_";1.0;3.68;"cir los alimentos frescos, encender
+_¿te gustaría saber cómo organizar los alimentos en los recipientes para congelar?_";1.0;3.78;"cir los alimentos frescos, encender
 Supercongelación.
  ""Activar Supercongelación"",
 Página18
@@ -7998,9 +8041,9 @@ ma.
 Para finalizar un programa antes de
 tiempo o cambiar un programa inicia-
 do, es necesario cancelarlo.";['Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'Lavavajillas.pdf']
-gpt-oss:20b-cloud;¿Son más adecuados para congelar los alimentos crudos o los preparados? ;es;"Los alimentos preparados son más adecuados para congelar que los alimentos crudos.
+gpt-oss:20b-cloud;¿Son más adecuados para congelar los alimentos crudos o los preparados? ;es;"Los alimentos preparados son más adecuados que los alimentos crudos para congelar.
 
-_¿Te gustaría saber ¿te gustaría saber cómo preparar adecuadamente un alimento antes de congelarlo??_";1.0;3.16;"Lavar la fruta, retirar los huesos y,
+_¿te gustaría saber cómo preparar los alimentos antes de congelarlos?_";1.0;3.44;"Lavar la fruta, retirar los huesos y,
 si así se desea, pelarla antes de
 congelarla; dado el caso, se le
 puede añadir azúcar o una solu-
@@ -8088,9 +8131,9 @@ PRECAUCIÓN ‒ ¡Riesgo de daños para la salud!
 Para evitar la contaminación de los alimentos, se deben tener en
 cuenta las siguientes indicaciones.
 Si se abre la puerta durante un tiempo prolongado, se puede";['Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf', 'Frigorifico.pdf']
-gpt-oss:20b-cloud;¿Qué tres acciones se recomiendan para la verdura antes de congelarla? ;es;"Para la verdura se recomienda: **lavarla, trocearla y escaldarla** antes de congelarla.
+gpt-oss:20b-cloud;¿Qué tres acciones se recomiendan para la verdura antes de congelarla? ;es;"Lavar, trocear y escaldar la verdura antes de congelarla.
 
-_¿Te gustaría saber ¿te gustaría saber cómo escaldar correctamente la verdura??_";1.0;4.04;"Lavar la fruta, retirar los huesos y,
+_¿te gustaría saber cómo escaldar la verdura paso a paso?_";1.0;4.63;"Lavar la fruta, retirar los huesos y,
 si así se desea, pelarla antes de
 congelarla; dado el caso, se le
 puede añadir azúcar o una solu-
@@ -8185,9 +8228,9 @@ congelarla; dado el caso, se le
 puede añadir azúcar o una solu-
 ción de ácido ascórbico.
 Algunos alimentos apropiados pa-";['Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf', 'Frigorifico.pdf']
-gpt-oss:20b-cloud;¿Se recomienda congelar rábanos o huevos con cáscara? ;es;"No se recomienda congelar rabanos (rabanitos) ni huevos con cáscara, ya que están listados como alimentos no apropiados para congelar en los manuales.
+gpt-oss:20b-cloud;¿Se recomienda congelar rábanos o huevos con cáscara? ;es;"No se recomienda congelar rabanitos ni huevos con cáscara, ya que están listados como alimentos no apropiados para congelar en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber cómo conservar adecuadamente otros vegetales o alimentos para congelar??_";1.0;3.64;"Lavar la fruta, retirar los huesos y,
+_¿te gustaría saber cómo conservar adecuadamente otro alimento que planeas congelar?_";1.0;3.29;"Lavar la fruta, retirar los huesos y,
 si así se desea, pelarla antes de
 congelarla; dado el caso, se le
 puede añadir azúcar o una solu-
@@ -8287,7 +8330,7 @@ con .
 Modificar el tiempo de finalización";['Frigorifico.pdf', 'HornoEmpotrado.pdf', 'Lavavajillas.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Es la mayonesa un alimento adecuado para ser congelado? ;es;"No, la mayonesa no es un alimento adecuado para ser congelado.
 
-_¿Te gustaría saber ¿te gustaría saber qué alimentos sí se pueden congelar sin problemas??_";1.0;3.05;"Lavar la fruta, retirar los huesos y,
+_¿te gustaría saber qué alimentos sí se pueden congelar sin perder calidad?_";1.0;3.44;"Lavar la fruta, retirar los huesos y,
 si así se desea, pelarla antes de
 congelarla; dado el caso, se le
 puede añadir azúcar o una solu-
@@ -8370,7 +8413,7 @@ cuenta las siguientes indicaciones.
 Si se abre la puerta durante un tiempo prolongado, se puede";['Frigorifico.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'Frigorifico.pdf']
 gpt-oss:20b-cloud;¿Qué dos datos deben anotarse al marcar los envases de congelación? ;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber cómo elegir el material de empaque adecuado para congelar alimentos??_";0.0;6.13;"3. Pulsar el alimento deseado.
+_¿quieres saber cómo conservar la calidad de los alimentos al congelarlos?_";0.0;6.44;"3. Pulsar el alimento deseado.
 4. Pulsar el plato deseado.
 Consejo: En algunos platos, es posible seleccionar
 un tipo de preparación preferido.
@@ -8456,9 +8499,9 @@ laje adecuados permite conservar
 significativamente la calidad de los
 productos y evitar que se quemen
 por congelación.";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'Frigorifico.pdf']
-gpt-oss:20b-cloud;¿Cuántos meses se pueden conservar las aves congeladas a -18°C? ;es;"Las aves pueden conservarse en congelación a –18 °C durante hasta **8 meses**.
+gpt-oss:20b-cloud;¿Cuántos meses se pueden conservar las aves congeladas a -18°C? ;es;"Las aves pueden conservarse hasta **8 meses** a –18 °C.
 
-_¿Te gustaría saber ¿te gustaría saber cómo descongelar adecuadamente las aves para mantener su calidad??_";1.0;2.92;"berá efectuarse a una temperatura
+_¿te gustaría saber cuánto tiempo se pueden conservar otros tipos de alimentos, como pescados o verduras, a esa temperatura?_";1.0;4.55;"berá efectuarse a una temperatura
 de –18 °C o más baja.
 Los alimentos perecederos pueden
 almacenarse congelados durante
@@ -8569,7 +8612,7 @@ es Accesorios
 Accesorios6 Accesorios";['Frigorifico.pdf', 'HornoEmpotrado.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Cuál es el tiempo máximo de conservación para frutas congeladas? ;es;"El tiempo máximo de conservación para frutas congeladas a −18 °C es de **12 meses**.
 
-_¿Te gustaría saber ¿te gustaría saber cómo descongelar adecuadamente las frutas congeladas??_";1.0;2.97;"Envasar productos congelados
+_¿te gustaría saber cómo descongelar adecuadamente las frutas congeladas?_";1.0;3.17;"Envasar productos congelados
 Utilizar el tipo y el material de emba-
 laje adecuados permite conservar
 significativamente la calidad de los
@@ -8669,9 +8712,10 @@ posible utilizar el funcionamiento con vapor.
 La descalcificación consta de varios pasos y dura entre
 70 y 95 minutos:
 Descalcificación (55-70 minutos aprox.)";['Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Dónde se pueden preparar alimentos de consumo inmediato (además del horno o placas)? ;es;"Puedes preparar alimentos de consumo inmediato en el **compartimento de cocción** del aparato, además del horno o las placas.
+gpt-oss:20b-cloud;¿Dónde se pueden preparar alimentos de consumo inmediato (además del horno o placas)? ;es;"Puedes preparar alimentos de consumo inmediato en el **compartimento de cocción** del aparato, que funciona como una zona de cocción adicional a las placas o al horno.  
+Además, el mismo dispositivo cuenta con un **compartimento de calentamiento** que permite mantener la comida caliente durante hasta 24 horas sin necesidad de cambiar la configuración del aparato.
 
-_¿Te gustaría saber ¿te gustaría saber cómo ajustar la temperatura en el compartimento de cocción??_";1.0;8.88;"Lavar la fruta, retirar los huesos y,
+_¿te gustaría saber cómo configurar el compartimento de calentamiento para mantener la comida a la temperatura adecuada?_";1.0;8.4;"Lavar la fruta, retirar los huesos y,
 si así se desea, pelarla antes de
 congelarla; dado el caso, se le
 puede añadir azúcar o una solu-
@@ -8763,9 +8807,9 @@ hasta 24 horas sin tener que cambiar el comportamien-
 to del aparato. Utilizar las funciones horarias y modificar
 los ajustes básicos.
 Nota: Si se abre la puerta del aparato durante el funcio-";['Frigorifico.pdf', 'HornoEmpotrado.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Qué elemento se debe desmontar antes de sacar la tapa del cajón de frutas para limpiar? ;es;"Antes de quitar la tapa del cajón de frutas y verduras, debes desmontar primero la **bandeja situada encima del cajón**.
+gpt-oss:20b-cloud;¿Qué elemento se debe desmontar antes de sacar la tapa del cajón de frutas para limpiar? ;es;"Antes de retirar la tapa del cajón de frutas, debes desmontar la **bandeja que se encuentra encima del cajón de frutas y verduras**.
 
-_¿Te gustaría saber ¿te gustaría saber cómo desmontar la tapa del cajón una vez que la bandeja esté retirada??_";1.0;4.28;"2. Retirar los alimentos y guardarlos
+_¿quieres saber cómo ajustar el regulador de humedad en el cajón de frutas y verduras?_";1.0;6.45;"2. Retirar los alimentos y guardarlos
 en un lugar fresco.
 Colocar acumuladores de frío di-
 rectamente sobre los alimentos, si
@@ -8870,9 +8914,9 @@ cocción y de las rejillas.
 La suciedad gruesa puede incrustarse y dificultar su
 eliminación.
 4. Limpiar la puerta del aparato y los bordes del com-";['Frigorifico.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Por qué no se deben usar esponjas duras para limpiar el aparato? ;es;"No he encontrado esa información en los manuales.
+gpt-oss:20b-cloud;¿Por qué no se deben usar esponjas duras para limpiar el aparato? ;es;"No se deben usar esponjas duras porque pueden rayar, dañar o desgastar las superficies internas y externas del aparato, comprometiendo su funcionamiento y la integridad de los componentes, como la puerta y la junta. El manual indica que la limpieza debe realizarse con los productos y métodos especificados para evitar daños.
 
-_¿Te gustaría saber ¿te gustaría saber qué productos de limpieza sí se recomiendan para el aparato??_";0.0;4.38;"20.2 Limpiar el aparato
+_¿te gustaría saber qué productos de limpieza son los recomendados para tu horno?_";1.0;5.9;"20.2 Limpiar el aparato
 Para evitar daños en el aparato, debe limpiarse solo se-
 gún lo especificado y con los productos de limpieza
 adecuados.
@@ -8966,7 +9010,7 @@ eliminación.
 4. Limpiar la puerta del aparato y los bordes del com-";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Qué tipo de jabón se debe usar para limpiar el aparato? ;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber cómo preparar el aparato para la función de limpieza??_";0.0;3.47;"20.2 Limpiar el aparato
+_¿quieres saber cómo retirar la suciedad gruesa del compartimento de cocción?_";1.0;6.21;"20.2 Limpiar el aparato
 Para evitar daños en el aparato, debe limpiarse solo se-
 gún lo especificado y con los productos de limpieza
 adecuados.
@@ -9060,7 +9104,7 @@ do en el compartimento de cocción, en las rejillas y
 en la zona de la puerta del aparato.";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Hasta dónde hay que sacar el compartimento de congelación para retirar su recipiente? ;es;"Saca el compartimento de congelación hasta el tope para poder retirar su recipiente.
 
-_¿Te gustaría saber ¿necesitas ayuda para volver a colocar el recipiente después de retirarlo??_";1.0;3.22;"compartimento de cocción y presionar hacia atrás .
+_¿te gustaría saber cómo limpiar el recipiente de congelación una vez retirado?_";1.0;4.37;"compartimento de cocción y presionar hacia atrás .
 2. Insertar la rejilla en la horquilla de deslizamiento de-
 lantera  hasta que toque con la pared del comparti-
 mento de cocción y presionar hacia abajo .
@@ -9145,11 +9189,12 @@ se del mismo.
 Seguridad es
 No deje que los niños jueguen con el aparato.
 La limpieza y el cuidado del aparato a cargo";['HornoEmpotrado.pdf', 'Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Qué modo está activo si el aparato no enfría pero el panel se ilumina? ;es;"El modo que suele estar activo cuando el aparato no enfría pero el panel indicador sigue iluminado es el **modo Demo**. En este modo el electrodoméstico se mantiene en una configuración de prueba, por lo que no activa el sistema de enfriamiento (ni de calefacción) aunque la pantalla siga encendida.  
+gpt-oss:20b-cloud;¿Qué modo está activo si el aparato no enfría pero el panel se ilumina? ;es;"El aparato está en **modo Demo**.  
+En este modo el refrigerador no activa el compresor, por lo que no enfría, pero el panel indicador sigue iluminándose y mostrando la hora y los ajustes.  
 
-Para desactivar el modo Demo, desconecta brevemente el aparato de la red eléctrica, vuelve a conectarlo y, antes de que pasen cinco minutos, desactiva el modo Demo en los ajustes básicos.
+Para desactivar el modo Demo, desconecta brevemente el aparato de la red eléctrica, vuelve a conectarlo y desactiva el modo Demo en los ajustes básicos (página 27).
 
-_¿Te gustaría saber ¿te gustaría saber cómo cambiar el modo demo a otro modo de funcionamiento??_";1.0;5.05;"no se modifican. En el panel indicador se muestra un aviso.
+_¿te gustaría saber cómo cambiar el modo de funcionamiento a modo normal?_";1.0;5.12;"no se modifican. En el panel indicador se muestra un aviso.
 El momento en el que se alcanza la duración máxima de funcionamiento depen-
 de de los respectivos ajustes de un modo de funcionamiento.
 1. Para continuar con el funcionamiento, es preciso apagar primero el aparato
@@ -9236,7 +9281,7 @@ Hay diferentes causas posibles.
 Ir a www.home-connect.com.";['HornoEmpotrado.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Es un fallo si el aparato emite ruidos de burbujeo? ;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber cuáles son los ruidos normales que puede emitir el aparato durante su funcionamiento??_";1.0;3.75;"20.2 Limpiar el aparato
+_¿te gustaría saber qué ruidos se consideran normales durante el funcionamiento del aparato?_";1.0;4.87;"20.2 Limpiar el aparato
 Para evitar daños en el aparato, debe limpiarse solo se-
 gún lo especificado y con los productos de limpieza
 adecuados.
@@ -9327,7 +9372,7 @@ Bajo
 2";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'Lavavajillas.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Qué se puede hacer con los alimentos ligeramente descongelados tras un corte de luz? ;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿qué medidas de seguridad debo tomar con los alimentos parcialmente descongelados??_";0.0;4.39;"carcha en el congelador. Por tanto,
+_¿te gustaría saber cómo almacenar de forma segura alimentos parcialmente descongelados?_";1.0;5.3;"carcha en el congelador. Por tanto,
 no es necesario un desescarchado.
 Cuidados y limpieza13 Cuidados y limpieza
 Para que el aparato mantenga duran-
@@ -9411,10 +9456,9 @@ El presente producto contiene fuentes de luz de la clase
 de eficiencia energética G. Las fuentes de luz se en-
 cuentran disponibles como repuesto y puede ser reem-
 plazadas únicamente por un personal especializado.";['Frigorifico.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Qué botón se usa para iniciar la autocomprobación tras reiniciar el aparato? ;es;"Para que el aparato realice la autocomprobación después de reiniciarse, no se pulsa ningún botón.  
-Solo tienes que abrir y cerrar una vez la puerta del aparato.
+gpt-oss:20b-cloud;¿Qué botón se usa para iniciar la autocomprobación tras reiniciar el aparato? ;es;"Para que el aparato realice la autocomprobación tras reiniciarlo, no se pulsa ningún botón; basta con abrir y cerrar una vez la puerta del aparato.
 
-_¿Te gustaría saber ¿te gustaría saber cómo comprobar que la autocomprobación se ha completado correctamente??_";0.0;3.93;"14.1 Corte en el suministro eléctri-
+_¿te gustaría saber cómo comprobar que la autocomprobación se ha completado correctamente?_";1.0;5.12;"14.1 Corte en el suministro eléctri-
 co⁠ ⁠...............................................⁠ ⁠28
 14.2 Ejecutar la autocomproba-
 ción del aparato⁠ ⁠......................⁠ ⁠28
@@ -9501,7 +9545,7 @@ nica o en la tienda en línea.
 Antes de usar el aparato por primera vez7 Antes de usar el aparato por primera vez";['Frigorifico.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Cuántas señales acústicas suenan si la autocomprobación del aparato es correcta? ;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿quieres saber cómo activar la autocomprobación??_";0.0;4.58;"lla.
+_¿te gustaría saber qué indica cada señal acústica durante la autocomprobación?_";0.0;4.99;"lla.
 5. Para que el aparato realice la autocomprobación an-
 tes del primer uso, abrir y cerrar una vez la puerta del
 aparato.
@@ -9609,7 +9653,7 @@ programa tras unos 4 minutos.
 8. Cerrar el grifo de agua.";['HornoEmpotrado.pdf', 'Lavavajillas.pdf', 'HornoEmpotrado.pdf', 'Lavavajillas.pdf']
 gpt-oss:20b-cloud;¿Por qué se debe dejar la puerta abierta al apagar el aparato por largo tiempo?;es;"No he encontrado esa información en los manuales.
 
-_¿Te gustaría saber ¿te gustaría saber cómo limpiar correctamente la puerta del aparato??_";0.0;4.81;"Eliminar completamente cualquier residuo del com-
+_¿quieres saber cómo limpiar la junta de la puerta?_";0.0;5.82;"Eliminar completamente cualquier residuo del com-
 partimento de cocción y de la puerta del aparato an-
 tes de volver a encenderlo.
 Si la junta presenta mucha suciedad, la puerta del apa-
@@ -9705,9 +9749,9 @@ charse.
 5. Cerrar la puerta del aparato.
 25.3 Extraer los cristales de la puerta
 ADVERTENCIA ‒ ¡Riesgo de lesiones!";['HornoEmpotrado.pdf', 'Frigorifico.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
-gpt-oss:20b-cloud;¿Por qué no se deben retirar las bandejas al desechar el aparato?;es;"No he encontrado esa información en los manuales.
+gpt-oss:20b-cloud;¿Por qué no se deben retirar las bandejas al desechar el aparato?;es;"No se deben retirar las bandejas al desechar el aparato porque pueden contener residuos de alimentos, grasa y restos de productos de limpieza que, al separarse, podrían contaminar el medio ambiente o generar riesgos de incendio o quemaduras. Además, las bandejas suelen estar integradas al diseño del horno y su extracción puede dañar la estructura del aparato, comprometiendo la correcta disposición y reciclaje de la unidad completa.
 
-_¿Te gustaría saber ¿te gustaría saber cómo desechar correctamente el aparato en tu zona??_";0.0;4.55;"cia la puerta del aparato.
+_¿te gustaría saber cómo limpiar adecuadamente las bandejas antes de desechar el horno?_";1.0;10.17;"cia la puerta del aparato.
 p. ej., ban-
 deja univer-
 sal o ban-
@@ -9804,7 +9848,7 @@ Bajo
 2";['HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf', 'HornoEmpotrado.pdf']
 gpt-oss:20b-cloud;¿Cuál es la clase de eficiencia energética de la fuente de luz del producto?;es;"La fuente de luz del producto pertenece a la clase de eficiencia energética **G**.
 
-_¿Te gustaría saber ¿te gustaría saber cómo reemplazar la fuente de luz??_";1.0;4.58;"de eficiencia energética G. Las fuentes de luz se en-
+_¿te gustaría saber cómo cambiar la fuente de luz o cómo mantenerla en buen estado?_";1.0;4.45;"de eficiencia energética G. Las fuentes de luz se en-
 cuentran disponibles como repuesto y puede ser reem-
 plazadas únicamente por un personal especializado.
 La información conforme a los reglamentos (EU)

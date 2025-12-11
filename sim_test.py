@@ -6,8 +6,11 @@ import sys
 from src.pipeline.batch_tester import run_evaluation_batch
 
 # --- CONFIGURACIÓN DE LA PRUEBA ---
-INPUT_FILE_NAME = "PromptsFrigo.csv"
-OUTPUT_FILE_NAME = "FrigoResultsQwen2.csv"
+THEME="Frigo"
+MODEL="Kimi"
+# ------------------
+INPUT_FILE_NAME = f"Prompts{THEME}.csv"
+OUTPUT_FILE_NAME = f"{THEME}Results{MODEL}.csv"
 # ------------------
 DEFAULT_JUDGE = "gpt-oss:20b-cloud"  # El modelo juez por defecto
 
