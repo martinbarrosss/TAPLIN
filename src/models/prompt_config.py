@@ -3,7 +3,6 @@
 
 from langchain.prompts import PromptTemplate
 
-# Versión mejorada del template del prompt
 _RAG_PROMPT_TEMPLATE_STR = """Eres un **Asistente Experto en Electrodomésticos**.
 
 ---

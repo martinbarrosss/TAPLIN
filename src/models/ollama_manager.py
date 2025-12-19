@@ -1,6 +1,5 @@
 from langchain_ollama import OllamaLLM
 import os
-# Ya no necesitamos importar 'ollama' ni 'Client' porque no vamos a listar nada
 
 class OllamaModelManager:
     """
@@ -8,8 +7,8 @@ class OllamaModelManager:
     """
     
     def __init__(self):
-        # Configuración de la URL (Mantenemos la lógica de seguridad para localhost)
-        # Esto sigue siendo necesario para cuando enviemos los mensajes del chat
+        # Configuración de la URL 
+
         env_url = os.getenv("OLLAMA_BASE_URL", "")
         
         if "ollama.com" in env_url and not os.getenv("OLLAMA_API_KEY"):
@@ -25,7 +24,7 @@ class OllamaModelManager:
         """
         Retorna una lista FIJA de modelos para evitar errores de conexión en Streamlit.
         """
-        # Aquí pones exactamente los mismos que tienes en batch_tester.py
+
         return [
             "gpt-oss:20b-cloud",
             "deepseek-v3.1:671b-cloud",

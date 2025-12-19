@@ -2,7 +2,6 @@
 
 import argparse
 import sys
-# Importamos la función ORQUESTADORA correcta del otro script
 from src.pipeline.batch_tester import run_evaluation_batch
 
 # --- CONFIGURACIÓN DE LA PRUEBA ---
@@ -24,7 +23,7 @@ AVAILABLE_MODELS = [
 
 def select_model_interactively():
     """Muestra un menú para elegir el modelo si no se pasó por argumento."""
-    print("\n--- 🤖 SELECCIÓN DE MODELO PARA SIMULACIÓN ---")
+    print("\n--- SELECCIÓN DE MODELO PARA SIMULACIÓN ---")
     for i, model_name in enumerate(AVAILABLE_MODELS):
         print(f"  [{i+1}] {model_name}")
     
@@ -35,9 +34,9 @@ def select_model_interactively():
             if 0 <= choice < len(AVAILABLE_MODELS):
                 return AVAILABLE_MODELS[choice]
             else:
-                print("❌ Opción no válida. Intenta de nuevo.")
+                print(" Opción no válida. Intenta de nuevo.")
         except ValueError:
-            print("❌ Por favor, introduce un número válido.")
+            print(" Por favor, introduce un número válido.")
 
 def run_simulation(target_model: str = None):
     """
@@ -53,23 +52,21 @@ def run_simulation(target_model: str = None):
     if not selected_model:
         selected_model = select_model_interactively()
     else:
-        # Validamos si el modelo pasado por argumento es conocido (opcional, solo aviso)
+        # Validamos si el modelo pasado por argumento es conocido
         if selected_model not in AVAILABLE_MODELS:
-            print(f"⚠️  Aviso: El modelo '{selected_model}' no está en la lista oficial, pero se intentará usar.")
+            print(f"  Aviso: El modelo '{selected_model}' no está en la lista oficial, pero se intentará usar.")
 
-    print(f"\n✅ Modelo seleccionado: {selected_model}")
-    print(f"⚖️  Juez asignado: {DEFAULT_JUDGE}")
+    print(f"\n Modelo seleccionado: {selected_model}")
+    print(f"  Juez asignado: {DEFAULT_JUDGE}")
 
-    # Llamamos a la función de batch_tester con los parámetros correctos
-    # Nota: models_to_test espera una lista, así que ponemos [selected_model]
     run_evaluation_batch(
         input_filename=INPUT_FILE_NAME,
         output_filename=OUTPUT_FILE_NAME,
         models_to_test=[selected_model], 
         judge_model=DEFAULT_JUDGE
     )
-    
-    print("\n==============================================")
+
+    print("\n============================================")
     print("   FIN DEL SIMULADOR DE PRUEBAS MASIVAS       ")
     print("==============================================")
 
@@ -89,5 +86,5 @@ if __name__ == "__main__":
     try:
         run_simulation(target_model=args.model)
     except KeyboardInterrupt:
-        print("\n\n🛑 Ejecución interrumpida por el usuario.")
+        print("\n\n Ejecución interrumpida por el usuario.")
         sys.exit(0)

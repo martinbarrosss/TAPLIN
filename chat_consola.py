@@ -6,10 +6,9 @@ from dotenv import load_dotenv
 from src.models.ollama_manager import OllamaModelManager
 from src.models.chatbot import RAGChatbot
 from src.utils.app_utils import load_vector_store
-from src.models.traductor import Traductor             # Importa el modelo de traducción
-from src.core.rag_service import RAGMultilingualService # Importa el servicio central de lógica
+from src.models.traductor import Traductor            
+from src.core.rag_service import RAGMultilingualService 
 
-# --- Función Auxiliar para LLM (se mantiene) ---
 def select_llm_model(model_manager: OllamaModelManager) -> str:
     """
     Permite al usuario seleccionar un modelo de lenguaje de la lista de disponibles.
@@ -31,7 +30,6 @@ def select_llm_model(model_manager: OllamaModelManager) -> str:
         except ValueError:
             print("Entrada inválida. Por favor, introduce un número.")
 
-# --- NUEVA Función Auxiliar para Idioma ---
 def select_language() -> str:
     """Permite al usuario seleccionar el idioma de la conversación."""
     print("\nSelecciona el idioma de la conversación:")
@@ -47,8 +45,7 @@ def select_language() -> str:
         else:
             print("Opción inválida.")
         
-# --- Bucle de Chat MODIFICADO ---
-# Ahora recibe el servicio central y el idioma
+
 def chat_loop(rag_service: RAGMultilingualService, idioma_conversacion: str):
     """
     Bucle principal de interacción con el chatbot multilingüe.
@@ -88,38 +85,36 @@ def chat_loop(rag_service: RAGMultilingualService, idioma_conversacion: str):
         except Exception as e:
             print(f" Ocurrió un error al procesar la pregunta: {e}")
 
-# --- Función Principal MODIFICADA ---
 def main():
     """
     Función principal que orquesta la ejecución, inicializando todos los componentes.
     """
-    # 0. Cargar variables de entorno y seleccionar idioma
+    # Cargar variables de entorno y seleccionar idioma
     load_dotenv()
     idioma_conversacion = select_language() 
 
-    # 1. Inicializar el gestor de modelos de Ollama
+    # Inicializar el gestor de modelos de Ollama
     model_manager = OllamaModelManager()
     
-    # 2. Seleccionar el modelo de lenguaje e inicializar LLM
+    # Seleccionar el modelo de lenguaje e inicializar LLM
     llm_model_name = select_llm_model(model_manager)
     print(f" Usando el modelo de lenguaje: {llm_model_name}")
     llm = model_manager.create_llm(llm_model_name)
     
-    # 3. Cargar la base de datos vectorial
+    # Cargar la base de datos vectorial
     vector_store, _ = load_vector_store()
     if not vector_store:
         print("No se pudo cargar la base de datos vectorial. Saliendo...")
         return
 
-    # 4. Inicializar RAG Chatbot y Traductor
+    # Inicializar RAG Chatbot y Traductor
     chatbot = RAGChatbot(vector_store, llm)
     traductor = Traductor() 
 
-    # 5. Inicializar el Servicio Central de Lógica
     # Este servicio une el chatbot RAG y el traductor
     rag_service = RAGMultilingualService(chatbot, traductor)
-    
-    # 6. Iniciar el bucle de conversación, pasando el servicio y el idioma
+
+    # Iniciar el bucle de conversación, pasando el servicio y el idioma
     chat_loop(rag_service, idioma_conversacion)
 
 if __name__ == "__main__":

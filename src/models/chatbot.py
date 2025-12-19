@@ -1,5 +1,4 @@
 # --- RAGChatbot.py ---
-# (Versión modificada para usar el prompt externo)
 
 from langchain.chains import RetrievalQA
 from langchain_community.vectorstores import Chroma
@@ -38,9 +37,6 @@ class RAGChatbot:
             Objeto RetrievalQA configurado
         """
         
-        # Ya no definimos el template aquí.
-        # Usamos directamente el objeto RAG_PROMPT importado de prompt_config.py
-        
         qa_chain = RetrievalQA.from_chain_type(
             llm=self.llm,
             chain_type="stuff",
@@ -52,7 +48,6 @@ class RAGChatbot:
         return qa_chain
     
     def answer_question(self, question: str):
-        
         """
         Retorna: Diccionario con respuesta, fuentes y la sugerencia oculta.
         """
@@ -66,13 +61,13 @@ class RAGChatbot:
         if "|||" in raw_output:
             parts = raw_output.split("|||")
             answer_text = parts[0].strip()
-            # La segunda parte es la pregunta técnica para la "memoria"
+
             if len(parts) > 1:
                 suggested_q = parts[1].strip()
         
         response_dict = {
             "answer": answer_text,
-            "suggested_question": suggested_q, # Nuevo campo
+            "suggested_question": suggested_q, 
             "sources": result["source_documents"]
         }
         

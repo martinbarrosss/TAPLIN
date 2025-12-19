@@ -19,21 +19,21 @@ def load_and_combine_results(file_paths: list[str]) -> pd.DataFrame | None:
         try:
             df = pd.read_csv(path, sep=';')
             if not required_columns.issubset(df.columns):
-                print(f"⚠️  Aviso: El archivo '{path}' no contiene las columnas requeridas ({', '.join(required_columns)}) y será ignorado.")
+                print(f" Aviso: El archivo '{path}' no contiene las columnas requeridas ({', '.join(required_columns)}) y será ignorado.")
                 continue
             print(f"  - Cargando '{os.path.basename(path)}' ({len(df)} filas)...")
             all_dfs.append(df)
         except FileNotFoundError:
-            print(f"❌ Error: Archivo no encontrado en '{path}'.")
+            print(f" Error: Archivo no encontrado en '{path}'.")
         except Exception as e:
-            print(f"❌ Error al leer el archivo '{path}': {e}")
+            print(f" Error al leer el archivo '{path}': {e}")
     
     if not all_dfs:
-        print("\n🛑 No se pudo cargar ningún archivo de resultados válido.")
+        print("\n No se pudo cargar ningún archivo de resultados válido.")
         return None
     
     combined_df = pd.concat(all_dfs, ignore_index=True)
-    print(f"\n✅ Total de {len(combined_df)} registros cargados para el análisis.")
+    print(f"\n Total de {len(combined_df)} registros cargados para el análisis.")
     return combined_df
 
 def calculate_and_print_metrics(df: pd.DataFrame):
@@ -50,18 +50,18 @@ def calculate_and_print_metrics(df: pd.DataFrame):
     for model_name, group in grouped:
         total_preguntas = len(group)
         
-        # 1. Errores de sistema (nulos)
+        # Errores de sistema
         errores_sistema = group['sense_score'].isnull()
         num_errores = errores_sistema.sum()
         
         # DataFrame sin los errores de sistema para seguir analizando
         respuestas_validas_df = group[~errores_sistema]
         
-        # 2. Respuestas "No Encontrado"
+        # Respuestas "No Encontrado"
         no_encontrado = respuestas_validas_df['answer'].str.contains(NOT_FOUND_PHRASE, na=False, case=False)
         num_no_encontrado = no_encontrado.sum()
         
-        # 3. Respuestas Útiles (el resto)
+        # Respuestas Útiles (el resto)
         respuestas_utiles_df = respuestas_validas_df[~no_encontrado]
         num_utiles = len(respuestas_utiles_df)
         
