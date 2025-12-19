@@ -1,12 +1,11 @@
 # src/ui/renders.py
-# MODIFICADO (Auto-scroll al fondo)
 
 import streamlit as st
-import streamlit.components.v1 as components # <-- NUEVA IMPORTACIÓN
+import streamlit.components.v1 as components
 
 # --- Funciones de Renderizado (Pestañas) ---
 
-def render_tab_chat(t): # <-- Acepta 't'
+def render_tab_chat(t):
     """Lógica y renderizado de la pestaña de Chat (manejo de la conversación)."""
     
     # Determinamos el idioma de la conversación
@@ -27,7 +26,6 @@ def render_tab_chat(t): # <-- Acepta 't'
             st.session_state.get("last_sources")):
             
             with st.expander(t("chat_expander_sources")): 
-                # --- CORRECCIÓN AQUÍ ---
                 # Extraemos solo los nombres de archivo de los objetos Document
                 unique_sources = set()
                 for doc in st.session_state.last_sources:
@@ -86,7 +84,7 @@ def render_tab_chat(t): # <-- Acepta 't'
     )
 
 
-def render_tab_info(t): # <-- Acepta 't'
+def render_tab_info(t):
     """Lógica y renderizado de la pestaña de Información del Sistema."""
     st.subheader(t("info_subheader")) 
     
@@ -103,7 +101,7 @@ def render_tab_info(t): # <-- Acepta 't'
         f"{t('info_rag_model_body')}" 
     )
 
-def render_tab_history(t): # <-- Acepta 't'
+def render_tab_history(t):
     """Lógica y renderizado de la pestaña de Historial de la Sesión."""
     st.subheader(t("history_subheader")) 
 

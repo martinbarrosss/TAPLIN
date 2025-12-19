@@ -1,8 +1,12 @@
 # --- RAGChatbot.py ---
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6bf16958d2be062256da8ea4ac7e545721bd1f73
 from langchain.chains import RetrievalQA
 from langchain_community.vectorstores import Chroma
 from langchain_ollama import OllamaLLM
+
 # Importamos el prompt pre-configurado desde el nuevo archivo
 from src.models.prompt_config import RAG_PROMPT
 
@@ -10,7 +14,6 @@ from src.models.prompt_config import RAG_PROMPT
 class RAGChatbot:
     """
     Implementa la lógica del chatbot con arquitectura RAG.
-    Ahora importa el prompt desde prompt_config.py
     """
     
     def __init__(self, vector_store: Chroma, llm: OllamaLLM):
@@ -36,7 +39,11 @@ class RAGChatbot:
         Returns:
             Objeto RetrievalQA configurado
         """
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6bf16958d2be062256da8ea4ac7e545721bd1f73
         qa_chain = RetrievalQA.from_chain_type(
             llm=self.llm,
             chain_type="stuff",
@@ -51,6 +58,7 @@ class RAGChatbot:
         """
         Retorna: Diccionario con respuesta, fuentes y la sugerencia oculta.
         """
+
         result = self.qa_chain.invoke({"query": question})
         raw_output = result["result"]
         
@@ -67,7 +75,11 @@ class RAGChatbot:
         
         response_dict = {
             "answer": answer_text,
+<<<<<<< HEAD
             "suggested_question": suggested_q, 
+=======
+            "suggested_question": suggested_q,
+>>>>>>> 6bf16958d2be062256da8ea4ac7e545721bd1f73
             "sources": result["source_documents"]
         }
         

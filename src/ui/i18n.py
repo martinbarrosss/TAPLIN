@@ -7,9 +7,9 @@ TRANSLATIONS = {
         "page_title": "Chatbot RAG - Manuales",
         "header_title": "Asistente de Manuales de Electrodomésticos",
         "header_markdown": "Haz preguntas específicas sobre los manuales y recibe respuestas precisas basadas en el contenido real.",
-        "tab_chat": "💬 Chat",
-        "tab_info": "ℹ️ Información",
-        "tab_history": "📜 Historial",
+        "tab_chat": " Chat",
+        "tab_info": "ℹ Información",
+        "tab_history": " Historial",
         
         # app_ui.py (sidebar)
         "sidebar_title": " Configuración",
@@ -27,7 +27,7 @@ TRANSLATIONS = {
         # renders.py (tab_chat)
         "chat_subheader": "Chat en {lang}",
         "chat_input_placeholder": "Escribe tu pregunta sobre los manuales en {lang}...",
-        "chat_spinner": " ⚙️ Procesando consulta y traduciendo a {lang}...",
+        "chat_spinner": " Procesando consulta y traduciendo a {lang}...",
         "chat_expander_sources": " Fuentes consultadas",
         "chat_error": "Error al procesar: {error}",
         
@@ -47,7 +47,7 @@ TRANSLATIONS = {
         
         # renders.py (tab_history)
         "history_subheader": "Revisar Historial de la Sesión",
-        "history_button_clear": "🗑️ Limpiar historial",
+        "history_button_clear": " Limpiar historial",
         "history_caption_empty": "El historial de esta sesión está vacío.",
         "history_role_user": "**Tú:** {content}",
         "history_role_assistant": "**Asistente:** {content}",
@@ -57,9 +57,9 @@ TRANSLATIONS = {
         "page_title": "Chatbot RAG - Manuais",
         "header_title": "Asistente de Manuais de Electrodomésticos",
         "header_markdown": "Fai preguntas específicas sobre os manuais e recibe respostas precisas baseadas no contido real.",
-        "tab_chat": "💬 Chat",
-        "tab_info": "ℹ️ Información",
-        "tab_history": "📜 Historial",
+        "tab_chat": " Chat",
+        "tab_info": "ℹ Información",
+        "tab_history": " Historial",
         
         # app_ui.py (sidebar)
         "sidebar_title": " Configuración",
@@ -77,7 +77,7 @@ TRANSLATIONS = {
         # renders.py (tab_chat)
         "chat_subheader": "Chat en {lang}",
         "chat_input_placeholder": "Escribe a túa pregunta sobre os manuais en {lang}...",
-        "chat_spinner": " ⚙️ Procesando consulta e traducindo a {lang}...",
+        "chat_spinner": "  Procesando consulta e traducindo a {lang}...",
         "chat_expander_sources": " Fontes consultadas",
         "chat_error": "Erro ao procesar: {error}",
         
@@ -97,7 +97,7 @@ TRANSLATIONS = {
         
         # renders.py (tab_history)
         "history_subheader": "Revisar Historial da Sesión",
-        "history_button_clear": "🗑️ Limpar historial",
+        "history_button_clear": " Limpar historial",
         "history_caption_empty": "O historial desta sesión está baleiro.",
         "history_role_user": "**Ti:** {content}",
         "history_role_assistant": "**Asistente:** {content}",

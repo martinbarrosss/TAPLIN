@@ -19,14 +19,14 @@ from src.utils.app_utils import load_vector_store
 # ==============================================================================
 class RAGJudge:
     def __init__(self, model_name: str, ollama_manager: OllamaModelManager):
-        print(f"⚖️  Inicializando Juez con el modelo: {model_name}")
+        print(f"Inicializando Juez con el modelo: {model_name}")
         self.llm = ollama_manager.create_llm(model_name, temperature=0)
     
     def _clean_score(self, score_text: str) -> float:
         match = re.search(r"\b(0|1)\b", score_text)
         if match:
             return float(match.group())
-        print(f"⚠️  Advertencia: No se pudo extraer la puntuación (0 o 1). Se usará 0.0.")
+        print(f"Advertencia: No se pudo extraer la puntuación (0 o 1). Se usará 0.0.")
         return 0.0
 
     def evaluate(self, question: str, answer: str) -> float:
@@ -43,7 +43,7 @@ class RAGJudge:
             score_raw = self.llm.invoke(prompt_sentido).strip()
             return self._clean_score(score_raw)
         except Exception as e:
-            print(f"❌ Error en la evaluación del Juez: {e}")
+            print(f"Error en la evaluación del Juez: {e}")
             return 0.0
 
 # ==============================================================================
@@ -57,10 +57,10 @@ def run_evaluation_batch(input_filename: str, output_filename: str, models_to_te
     output_path = os.path.join(OUTPUT_DIR, output_filename)
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     
-    print("🚀 Iniciando el Orquestador de Evaluaciones RAG...")
+    print("Iniciando el Orquestador de Evaluaciones RAG...")
     
     try:
-        print("🛠️  Cargando componentes base...")
+        print("Cargando componentes base...")
         vector_store, _ = load_vector_store()
         if vector_store is None: raise FileNotFoundError("No se pudo cargar la base de datos Chroma.")
         traductor = Traductor()
@@ -71,10 +71,10 @@ def run_evaluation_batch(input_filename: str, output_filename: str, models_to_te
         df_input = pd.read_csv(input_path)
         if 'query' not in df_input.columns: raise ValueError("Falta columna 'query' en CSV.")
         if 'language' not in df_input.columns: df_input['language'] = 'es'
-        print(f"✅ {len(df_input)} preguntas cargadas.")
+        print(f"{len(df_input)} preguntas cargadas.")
         
     except Exception as e:
-        print(f"🛑 Error crítico inicialización: {e}")
+        print(f"Error crítico inicialización: {e}")
         return
 
     results_data = []
@@ -82,7 +82,7 @@ def run_evaluation_batch(input_filename: str, output_filename: str, models_to_te
     current_iteration = 0
     
     for model_name in models_to_test:
-        print(f"\n--- 🤖 PROBANDO MODELO: {model_name} ---")
+        print(f"\n--- PROBANDO MODELO: {model_name} ---")
         try:
             llm = ollama_manager.create_llm(model_name, temperature=0.1)
             rag_chatbot = RAGChatbot(vector_store=vector_store, llm=llm)
@@ -129,10 +129,10 @@ def run_evaluation_batch(input_filename: str, output_filename: str, models_to_te
                         # Si es error 503 o conexión, esperamos
                         if ("503" in error_msg or "Connection refused" in error_msg) and attempt < max_retries - 1:
                             wait_s = (attempt + 1) * 15 # Espera 15s, 30s...
-                            print(f"    ⚠️ Servidor saturado ({error_msg}). Esperando {wait_s}s...")
+                            print(f"    Servidor saturado ({error_msg}). Esperando {wait_s}s...")
                             time.sleep(wait_s)
                         else:
-                            print(f"    ❌ Error en intento {attempt+1}: {e}")
+                            print(f"  Error en intento {attempt+1}: {e}")
                             if attempt == max_retries - 1: # Último intento fallido
                                 results_data.append({
                                     "model": model_name, "question": question, "language": lang,
@@ -141,10 +141,10 @@ def run_evaluation_batch(input_filename: str, output_filename: str, models_to_te
                                 })
 
         except Exception as e:
-            print(f"  ❌❌ Error crítico cargando modelo {model_name}: {e}")
+            print(f"  Error crítico cargando modelo {model_name}: {e}")
 
     if results_data:
-        print(f"\n✅ Guardando {len(results_data)} resultados en '{output_path}'...")
+        print(f"\n Guardando {len(results_data)} resultados en '{output_path}'...")
         df_results = pd.DataFrame(results_data)
         df_results.to_csv(output_path, index=False, sep=';', encoding='utf-8-sig')
         if "sense_score" in df_results.columns:

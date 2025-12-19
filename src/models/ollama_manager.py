@@ -7,8 +7,12 @@ class OllamaModelManager:
     """
     
     def __init__(self):
+<<<<<<< HEAD
         # Configuración de la URL 
 
+=======
+        # Configuración de la URL
+>>>>>>> 6bf16958d2be062256da8ea4ac7e545721bd1f73
         env_url = os.getenv("OLLAMA_BASE_URL", "")
         
         if "ollama.com" in env_url and not os.getenv("OLLAMA_API_KEY"):
@@ -24,7 +28,10 @@ class OllamaModelManager:
         """
         Retorna una lista FIJA de modelos para evitar errores de conexión en Streamlit.
         """
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6bf16958d2be062256da8ea4ac7e545721bd1f73
         return [
             "gpt-oss:20b-cloud",
             "deepseek-v3.1:671b-cloud",

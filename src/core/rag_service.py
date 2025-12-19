@@ -24,7 +24,6 @@ class RAGMultilingualService:
 
         # 1. TRADUCCIÓN DE IDA (gl -> es)
         if idioma_conversacion.lower() == 'gl':
-            # Nota: Si el usuario dice "Si" en gallego, el traductor lo pasará a "Sí" en español
             prompt_a_procesar = self.traductor.traducir_gl_a_es(user_prompt)
         
         # 2. INTELIGENCIA DE FLUJO (Checkear memoria)

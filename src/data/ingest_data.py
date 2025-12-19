@@ -79,7 +79,6 @@ class PDFProcessor:
 
 # --- Lógica principal del script de ingesta ---
 def ingest_data(pdf_dir: Path, persist_dir: Path):
-    """Ejecuta el pipeline de ingesta de datos."""
 
     if not os.path.exists(pdf_dir):
         print(f" Error: El directorio '{pdf_dir}' no existe. Por favor, créalo y añade tus archivos PDF.")
@@ -92,13 +91,11 @@ def ingest_data(pdf_dir: Path, persist_dir: Path):
         processor.create_vector_store(split_docs, persist_dir=str(persist_dir))
     
 if __name__ == "__main__":
+
     # --- Rutas Robustas ---
-    # 1. Obtenemos la ruta del directorio donde se encuentra este script (src/data)
     SCRIPT_DIR = Path(__file__).resolve().parent
-    # 2. Subimos dos niveles para llegar a la raíz del proyecto (TAPLIN)
     PROJECT_ROOT = SCRIPT_DIR.parent.parent
 
-    # 3. Construimos las rutas a los directorios de datos desde la raíz
     pdf_dir = PROJECT_ROOT / "manuals"
     persist_dir = PROJECT_ROOT / "chroma_db"
     

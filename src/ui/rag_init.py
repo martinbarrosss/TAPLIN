@@ -4,8 +4,8 @@ import streamlit as st
 # Importamos las clases necesarias
 from src.models.chatbot import RAGChatbot
 from src.models.ollama_manager import OllamaModelManager
-from src.models.traductor import Traductor             # NUEVO
-from src.core.rag_service import RAGMultilingualService # NUEVO
+from src.models.traductor import Traductor             
+from src.core.rag_service import RAGMultilingualService 
 from src.utils.app_utils import load_vector_store # Necesitas esta importación para cargar la DB
 
 def initialize_rag_system(selected_model: str, temperature: float) -> bool:
